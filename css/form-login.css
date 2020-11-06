@@ -1,0 +1,146 @@
+.main-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-login section {
+    height: 425px;
+}
+
+.form-login fieldset{
+    /* width: 121%; */
+    padding: 32px;
+    /* margin: 100px; */
+    background-color: white;
+    /* margin: 22px 0px; */
+    /* position: relative; */
+    /* bottom: 106px; */
+    border-radius: 10px;
+    height: 400px;
+}
+
+.form-login fieldset h2 {
+    color: #7c7c7d;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+.form-login fieldset imput {
+    margin-bottom: 10px;
+}
+
+.form-login fieldset select {
+    width: 26%;
+    margin-top: 0.8rem;
+    border-radius: 0.8rem;
+    background: var(--color-input-background);
+    border: 1px solid var(--color-line-in-white);
+    outline: 0;
+    padding: 0 1.6rem;
+    font: 1.3rem Archivo;
+    color: var(--color-text-complement);
+}
+
+.form-login fieldset button {
+    width: 75px;
+    height: 34px;
+    font-size: 1.6rem;
+    margin-top: 20px;
+    background-color: var(--agua);
+    border-color: var(--agua);
+}
+
+.form-login fieldset button:hover {
+    background-color: var(--agua-hover);
+    border-color: var(--agua-hover);
+}
+
+.seta-login {
+    color: white;
+    margin-left: -171px;
+    margin-top: 18px;
+    margin-bottom: 21px;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+
+    .form-login fieldset {
+        width: 127%;
+        padding: 32px;
+        /* margin: 100px; */
+        background-color: white;
+        /* margin: 22px 0px; */
+        /* position: relative; */
+        /* bottom: 106px; */
+        border-radius: 10px;
+        height: 425px;
+    }
+
+    .main-login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 581px;
+    }
+
+    .seta-login {
+        color: white;
+        margin-left: -179px;
+        margin-top: -19px;
+        margin-bottom: 33px;
+        font-size: 3.54rem;
+        cursor: pointer;
+
+    }
+
+    .seta-recupera-senha {
+        /* margin-left: -102px; */
+        /* margin-top: -55px; */
+        /* margin-bottom: 63px; */
+        font-size: 3.54rem;
+        cursor: pointer;
+        color: black;
+        position: relative;
+        right: -40px;
+        bottom: 100px;
+    }
+
+    .clique-aqui-login {
+        text-decoration: none !important;
+        color: var(--agua);
+        cursor: pointer;
+  
+    }
+
+    .clique-aqui-login:hover {
+        color: var(--agua-hover);
+    }
+
+    .form-redefine-senha {
+        display: flex;
+        justify-content: center;
+        background-color: #f7f7f7fb;
+        color: white;
+        padding: 125px 0px;
+        /* margin-right: 189px; */
+    }
+
+    .btn-primary:hover {
+        background-color: var(--agua-hover);
+        border-color: var(--agua-hover);
+    }
+
+    .form-lembrete {
+        width: 37vw;
+    }
+
+    .form-lembrete input {
+    min-width: 488px;
+    }
+
+}

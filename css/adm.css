@@ -1,0 +1,332 @@
+.page-adm {
+    background: var(--color-box-base);
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* padding: 0px 6px 6px 6px; */
+    background-color: #f9f9f9fb;
+}
+
+.page-adm #titulo-adm {
+    /* width: 100vw; */
+    width: 100wv;
+    background-color: #008F95;
+    color: #fff;
+    height: 208px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*! font-size: 80px; */
+    width: vw;
+    width: 100vw;
+}
+
+.section-content-adm {
+    /* width: 100%; */
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    flex-direction: column;
+    margin-top: 17px;
+}
+
+.section-content-adm caption, th, td, p {
+    font-size: 2rem;
+    color: var(--color-text-complement);
+    /* text-align: center; */
+}
+
+.seta-admin {
+    color: white;
+    /* margin-left: -171px; */
+    /* margin-top: 30px; */
+    /* margin-bottom: 192px; */
+    font-size: 3.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+    position: absolute;
+    top: 8px;
+    left: 30px;
+}
+
+
+.div-table-adm {
+    border: 1px solid rgb(226 226 226);
+    border-radius: 10px;
+    /* margin: 23px 26px; */
+}
+
+.div-table-adm table {
+    /* max-height: 176px; */
+    overflow-y:auto;
+    /*! max-width: 991px; */
+}
+
+
+section .div-table-adm {
+    padding: 21px;
+} 
+
+
+.page-adm #titulo-adm h1{
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.page-adm section {
+    padding: 0px 6px 0px 6px;
+    width: 100vw;
+}
+
+.page-adm .section-filtros {
+    width: 100vw;
+}
+
+.page-adm section h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.page-adm section hr {
+    background-color: #fff;
+    width: 95%;
+    /* margin-left: 36px; */
+}
+
+
+.page-adm aside {
+    height: 347px;
+    /* width: 313px; */
+    background-color: #E24E42;
+    padding: 20px 30px 0px 0px;
+    width: 100vw;
+}
+
+.page-adm aside li{
+    list-style: none;
+    color: white;
+    line-height: 4rem;
+    font-weight: 700;
+    text-align: initial;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 2rem;
+}
+
+
+.section-titulo-adm {
+    height: auto;
+    padding: 0px;
+}
+
+
+.form-cadas-admin {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(226 226 226);
+}
+
+.page-adm .section-content-adm #div-cadast-admin .form-cadas-admin fieldset .input-block label {
+   font-size: 2rem !important;
+}
+
+.form-cadas-admin fieldset h2{
+    margin: 10px 0px 20px 0px;
+    color: #7c7c7d;
+    color: var(--color-text-complement);
+    font-weight: 700;
+    text-align: center;
+    margin-top: 54px;
+    font-size: 2.5rem;
+}
+
+.form-cadas-admin fieldset {
+    padding: 30px;
+}
+
+.form-cadas-admin fieldset button {
+    width: 147px;
+    height: 55px;
+    font-size: 2rem;
+    margin-top: 20px;
+    background-color: var(--agua);
+    border-color: var(--agua);
+}
+
+.form-cadas-admin fieldset button:hover {
+    background-color: var(--agua-hover);
+    border-color: var(--agua-hover);
+}
+
+
+#div-cadast-admin{
+    /* margin-left: 25px; */
+    width: 100vw;
+    padding-top: 13px;
+    padding-right: 16px;
+}
+  
+
+
+.my-custom-scrollbar {
+    /* position: relative; */
+    max-height: 412px;
+    width: 100vw;
+    overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+   display: block;
+}
+
+.form-img {
+    margin-bottom: 20px;
+    color: var(--color-text-complement);
+    border-radius: 0.8rem;
+    background: var(--color-input-background);
+    border: 1px solid var(--color-line-in-white);
+}
+
+
+#regiao {
+    font-size: 2rem;
+    color: white;
+}
+
+@media (min-width: 768px) {
+
+    .section-content-adm {
+        /* width: 100%; */
+        display: flex;
+        justify-content: end;
+        align-items: baseline;
+        margin-top: 26px;
+    }
+
+    .page-adm .section-filtros {
+        width: 100vw;
+        display: flex;
+    }
+
+    .page-adm aside {
+        height: auto;
+        width: 249px;
+        /* padding: 20px; */
+        /* display: flex; */
+        /* justify-content: center; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+    }
+
+    .page-adm section hr {
+        margin-left: 17px;
+    } 
+
+    .my-custom-scrollbar {
+        /* position: relative; */
+        max-height: 344px;
+        width: 83vw;
+        overflow: auto;
+    }
+
+    .section-content-adm caption, th, td, p {
+        font-size: 1.5rem;
+    }
+
+    section .div-table-adm {
+        padding: 21px;
+        margin-left: 28px;
+        background-color: white;
+        margin-bottom: 23px;
+    }
+    
+    #div-cadast-admin {
+        /* margin-left: 25px; */
+        width: 104vw;
+        padding-top: 13px;
+        padding-left: 27px;
+        display: flex;
+    }
+
+    .div-table-adm2 {
+        width: 50%;
+        padding: 21px;
+        margin-left: 28px;
+        background-color: white;
+        border-radius: 10px;
+        margin-top: 25px;
+    }
+
+    .page-adm .section-content-adm #div-cadast-admin .form-cadas-admin fieldset .input-block label {
+        font-size: 1.5rem !important;
+
+    }
+
+    .page-adm aside li{
+        font-size: 1.5rem;
+        line-height: 50px;
+    }
+
+    .page-adm aside li:hover{
+        font-size: 1.55rem;
+    
+    }
+    
+
+    .form-cadas-admin fieldset button {
+        width: 75px;
+        height: 34px;
+        font-size: 1.5rem;
+        margin-top: 20px;
+        background-color: var(--agua);
+        border-color: var(--agua);
+    }
+
+    .form-cadas-admin fieldset h2 {
+        margin: 0px 0px 20px 0px;
+        color: var(--color-text-complement);
+        font-weight: 700;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .form-cadas-admin {
+        margin-top: 20px;
+        margin-bottom: 27px;
+        width: 25%;
+        margin-right: 98px;
+    }
+
+    .seta-admin {
+        margin-left: 615px;
+        font-size: 3.5rem;
+        cursor: pointer;
+        margin-top: 61px;
+    }
+
+   
+    .page-adm #titulo-adm h1 {
+        font-size: 4rem;
+    }
+
+    .page-adm section {
+        padding: 0 10px;
+        width: 100vw;
+    }
+
+    .page-adm section h2 {
+        font-size: 2rem;
+    }
+
+    .page-adm #titulo-adm {
+        height: 163px;
+    }
+
+    #regiao {
+        font-size: 1.4rem;
+    }
+
+}

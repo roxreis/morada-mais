@@ -1,0 +1,127 @@
+.img-logo {
+    width: 120px;
+}
+.navbar-custom.affix {
+    background-color: #f7f7f7fb;
+    padding: 15px
+}
+
+.navbar-custom {
+    /* background-color: #f7f7f7fb; */
+    Border-color: transparent;
+    padding: 15px
+}
+
+.navbar-custom .nav li a {
+    color: #717171;
+    font-weight: 600;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+
+#btn-login {
+    background-color: var(--mustard);
+    border-color: var(--mustard);
+    /* margin-bottom: 10px; */
+    margin-right: 10px;
+}
+
+#btn-login:hover {
+    background-color: var(--mustard-hover);
+    border-color: var(--mustard-hover);
+}
+
+#services {
+    padding-top: 104px;
+    /* margin-top: 50px; */
+
+}
+
+#about {
+    padding-top: 102px;
+}
+
+div-sair{
+    width: 50px;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: transparent;
+    border-color: transparent;
+
+}
+
+@media (min-width: 768px) {
+
+    .navbar-custom {
+        padding: 5px 0px;
+
+    }
+
+    .navbar-custom .nav li a {
+        color: #868686;
+        font-weight: 600;
+        font-size: 1.3rem;
+        text-decoration: none;
+    }
+
+    .img-logo {
+        width: 110px;
+    }
+
+    .navbar-right {
+        margin-top: 25px;
+    }
+
+    .col-lg-12 #btn
+    -enviar-msg {
+        background-color: var(--agua);
+        border-color: var(--agua);    
+    }
+
+    .col-lg-12 #btn-enviar-msg:hover {
+        background-color:  var(--agua-hover);
+        border-color:  var(--agua-hover);   
+    }
+
+    #btn-login {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+
+    #div-ul-menu ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-sair{
+        min-width: 61px;
+        text-align: center;
+    }
+
+
+nav ul li .nome-usuario {
+    border-right: none !important;
+    color: white!important;
+    background-color: var(--papaya);
+    font-weight: 900;
+    border-color: var(--papaya);
+}
+
+nav ul li .nome-usuario:hover{
+    background-color: var(--papaya);
+    border-color: var(--papaya);
+}
+
+.btn-danger.active.focus, .btn-danger.active:focus, .btn-danger.active:hover, .btn-danger:active.focus, .btn-danger:active:focus, .btn-danger:active:hover, .open>.dropdown-toggle.btn-danger.focus, .open>.dropdown-toggle.btn-danger:focus, .open>.dropdown-toggle.btn-danger:hover {
+    background-color: var(--papaya)!important;
+    border-color: var(--papaya)!important;
+}
+    
+
+}
+
+
