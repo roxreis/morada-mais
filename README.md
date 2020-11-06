@@ -9,15 +9,14 @@ HTML, CSS, JavaScript, MySQL, PHP e Boostrap.
 ### Código fonte
 
 ```
-git clone https://github.com/roxreis/recode-project.git
+git clone https://github.com/roxreis/morada-mais
 ```
 
 ### Instalação do projeto
 
-Para instalar execute o comando abaixo na pasta 'www' do WAMP server.
-obs: Não testado no XAMP.
+Para execução basta um servidor local, testado no WAMP e XAMP.
 
-Criar banco de dados no MySQL com nome moradamais.
+Criar banco de dados no MySQL com nome moradamais(existe um arquivo sql na pasta back-end/db).
 
 ### Funcionalidades
 
@@ -27,6 +26,7 @@ Criar banco de dados no MySQL com nome moradamais.
 - [x] Cadastro.
 - [x] Login.
 - [x] Login de administrador.
+- [x] Envio de mensagem pelo footer e listagem da mesma na pagina admin.
 - [x] Pagina do administrador com relatório de usuários e cadastro de novo admin.
 - [ ] Teste de personalidade.
 - [ ] Perfil do usuário.
