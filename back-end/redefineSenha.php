@@ -23,14 +23,13 @@ if (mysqli_num_rows($resultado) > 0) {
 
    echo "<script> alert('Sua frase de segurança confere! Redefina sua senha')</script>";
    echo "<script> window.location.href='/MORADA+/form-redefine-senha.php?id=$id'</script>";
-
-
   }
   
 } else {
 
     echo "<script> alert('Frase de segurança não confere!')</script>";
-    }
+    echo "<script> window.location.href='/MORADA+/lembrete-senha.php'</script>";
+  }
   
 
 

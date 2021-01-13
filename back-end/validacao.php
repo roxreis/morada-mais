@@ -14,10 +14,12 @@
   $senha = SHA1($_POST['senha']);
 
 //   var_dump($senha);
+//   var_dump($email);
+//   exit;
 
 if ($_POST['who'] == 1) {
 
-    $sql1 = "SELECT `user_id`, `first_name`, `user_nivel`, `user_email` FROM `usuarios` WHERE (`user_email` = '".$email ."') AND (`user_pass` = '". $senha ."') AND (`user_ativo` = 1) LIMIT 1";
+    $sql1 = "SELECT `id_user`, `first_name`, `user_nivel`, `user_email` FROM `usuario` WHERE (`user_email` = '".$email ."') AND (`user_pass` = '". $senha ."') AND (`user_ativo` = 1) LIMIT 1";
     $queryUser = $con->query($sql1);
 
     // var_dump($sql1);
@@ -38,7 +40,7 @@ if ($_POST['who'] == 1) {
          if (!isset($_SESSION)) session_start();
 
               // Salva os dados encontrados na sessão
-          $_SESSION['UsuarioID'] = $resultado['user_id'];
+          $_SESSION['UsuarioID'] = $resultado['id_user'];
           $_SESSION['UsuarioNome'] = $resultado['first_name'];
           $_SESSION['UsuarioNivel'] = $resultado['user_nivel'];
         //   $_SESSION['UsuarioImagem'] = $resultado['user_img'];

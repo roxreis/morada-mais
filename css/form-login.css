@@ -3,10 +3,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: auto;
+    background-color: #c8c4bb;
 }
 
 .main-login section {
-    height: 425px;
+    height: 467px;
 }
 
 .form-login fieldset{
@@ -18,8 +20,37 @@
     /* position: relative; */
     /* bottom: 106px; */
     border-radius: 10px;
-    height: 400px;
+    height: 424px;
+    /* margin-bottom: 85px; */
 }
+
+
+.seta-recupera-senha {
+    /* margin-left: -102px; */
+    /* margin-top: -55px; */
+    margin-bottom: 35px;
+    font-size: 3.54rem;
+    cursor: pointer;
+    color: white;
+    /* position: relative; */
+    /* right: -40px; */
+    /* bottom: 100px; */
+    margin-right: 208px;
+    width: 10%;
+}
+
+.form-redefine-senha {
+    display: flex;
+    /* justify-content: center; */
+    background-color: #f7f7f7fb;
+    color: white;
+    padding: 125px 0px;
+    /* margin-right: 189px; */
+    background-color: #c8c4bb;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .form-login fieldset h2 {
     color: #7c7c7d;
@@ -32,7 +63,7 @@
 }
 
 .form-login fieldset select {
-    width: 26%;
+    width: 38%;
     margin-top: 0.8rem;
     border-radius: 0.8rem;
     background: var(--color-input-background);
@@ -50,6 +81,7 @@
     margin-top: 20px;
     background-color: var(--agua);
     border-color: var(--agua);
+    margin-bottom: 10px;
 }
 
 .form-login fieldset button:hover {
@@ -66,7 +98,15 @@
     cursor: pointer;
 }
 
-@media (min-width: 768px) {
+.clique-aqui-login {
+    text-decoration: none !important;
+    color: var(--agua);
+    cursor: pointer;
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
 
     .form-login fieldset {
         width: 127%;
@@ -86,6 +126,7 @@
         align-items: center;
         flex-direction: column;
         height: 581px;
+        background-color: #c8c4bb;
     }
 
     .seta-login {
@@ -101,13 +142,15 @@
     .seta-recupera-senha {
         /* margin-left: -102px; */
         /* margin-top: -55px; */
-        /* margin-bottom: 63px; */
+        margin-bottom: 63px;
         font-size: 3.54rem;
         cursor: pointer;
-        color: black;
-        position: relative;
-        right: -40px;
-        bottom: 100px;
+        color: white;
+        /* position: relative; */
+        /* right: -40px; */
+        /* bottom: 100px; */
+        margin-right: 405px;
+        width: 10%;
     }
 
     .clique-aqui-login {
@@ -123,11 +166,14 @@
 
     .form-redefine-senha {
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
         background-color: #f7f7f7fb;
         color: white;
-        padding: 125px 0px;
+        padding: 50px 0px;
         /* margin-right: 189px; */
+        background-color: #c8c4bb;
+        flex-direction: column;
+        align-items: center;
     }
 
     .btn-primary:hover {
@@ -136,11 +182,27 @@
     }
 
     .form-lembrete {
-        width: 37vw;
+        /* width: 38vw; */
     }
 
     .form-lembrete input {
-    min-width: 488px;
+    min-width: 347px;
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+
+    .clique-aqui-login {
+        text-decoration: none !important;
+        color: var(--agua);
+        cursor: pointer;
+
+    }
+
+    .clique-aqui-login:hover {
+        color: var(--agua-hover);
     }
 
 }

@@ -11,16 +11,14 @@ section{
     padding: 0;
 }
 
-.body-form-cadastro  {
-background-color: #c8c4bb;
-}
+.body-form-cadastro  {/* background-color: #c8c4bb; */display: flex;flex-direction: column;}
 
 .div-form-banner {
     background-image: url(../img/header-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 304px;
-    background-position-x: 95px;
+    background-position-x: -4px;
     background-position-y: 0;
 }
 
@@ -37,7 +35,7 @@ background-color: #c8c4bb;
     /* padding-bottom: 0px; */
     background-color: #c8c4bb;
     padding: 0;
-    height: auto;
+    /* height: auto; */
 }
 
 #cadastro-usuario {
@@ -93,10 +91,10 @@ background-color: #c8c4bb;
         background-image: url(../img/header-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        /* background-position-x: -160px; */
+        background-position-x: 5px;
         height: 435px;
         background-position-x: 100p;
-        background-position-y: -587px;
+        background-position-y: -235px;
         }
         #section-form-cadastro{
             /* height: 1102px; */
@@ -158,4 +156,21 @@ background-color: #c8c4bb;
             left: 0rem;
             bottom: 0px;
         }
+}
+
+@media (min-width: 1024px){
+
+    .seta {
+        margin-left: 206px;
+    }
+
+}
+
+
+@media (min-width: 1200px){
+
+    .seta {
+        margin-left: 272px;
+    }
+
 }

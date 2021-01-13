@@ -5,7 +5,11 @@
     display: flex;
     flex-direction: column;
     /* padding: 0px 6px 6px 6px; */
-    background-color: #f9f9f9fb;
+    background-color: #dedede;
+}
+
+.page-adm section {
+    padding: 0;
 }
 
 .page-adm #titulo-adm {
@@ -13,13 +17,14 @@
     width: 100wv;
     background-color: #008F95;
     color: #fff;
-    height: 208px;
+    height: 119px;
     display: flex;
     justify-content: center;
     align-items: center;
     /*! font-size: 80px; */
     width: vw;
-    width: 100vw;
+    /* width: 100vw; */
+    flex-direction: column;
 }
 
 .section-content-adm {
@@ -42,12 +47,12 @@
     /* margin-left: -171px; */
     /* margin-top: 30px; */
     /* margin-bottom: 192px; */
-    font-size: 3.5rem;
+    font-size: 3rem;
     cursor: pointer;
     transition: 0.2s;
-    position: absolute;
-    top: 8px;
-    left: 30px;
+    /* position: absolute; */
+    /* top: 8px; */
+    /* left: 30px; */
 }
 
 
@@ -65,23 +70,25 @@
 
 
 section .div-table-adm {
-    padding: 21px;
+    padding: 15px;
+    background-color: white;
+    width: 351px;
+    margin-left: 26px;
+    margin-bottom: 10px;
+    box-shadow: 1px 2px 9px #424242;
 } 
 
 
 .page-adm #titulo-adm h1{
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: bold;
     text-align: center;
 }
 
-.page-adm section {
-    padding: 0px 6px 0px 6px;
-    width: 100vw;
-}
 
 .page-adm .section-filtros {
-    width: 100vw;
+    /* width: 100vw; */
+    /* height: 355px; */
 }
 
 .page-adm section h2 {
@@ -97,11 +104,12 @@ section .div-table-adm {
 
 
 .page-adm aside {
-    height: 347px;
+    /* height: 286px; */
     /* width: 313px; */
-    background-color: #E24E42;
-    padding: 20px 30px 0px 0px;
-    width: 100vw;
+    /* background-color: #E24E42; */
+    /* padding: 0px 8px; */
+    /* width: 104vw; */
+    display: none;
 }
 
 .page-adm aside li{
@@ -115,6 +123,9 @@ section .div-table-adm {
     font-size: 2rem;
 }
 
+aside .alert-danger {
+    margin-left: 187px;
+}
 
 .section-titulo-adm {
     height: auto;
@@ -123,10 +134,13 @@ section .div-table-adm {
 
 
 .form-cadas-admin {
-    width: 100%;
+    width: 351px;
     background-color: white;
     border-radius: 10px;
     border: 1px solid rgb(226 226 226);
+    margin-left: 26px;
+    box-shadow: 1px 2px 9px #424242;
+    margin-bottom: 10px;
 }
 
 .page-adm .section-content-adm #div-cadast-admin .form-cadas-admin fieldset .input-block label {
@@ -139,12 +153,12 @@ section .div-table-adm {
     color: var(--color-text-complement);
     font-weight: 700;
     text-align: center;
-    margin-top: 54px;
+    margin-top: 19px;
     font-size: 2.5rem;
 }
 
 .form-cadas-admin fieldset {
-    padding: 30px;
+    padding: 23px;
 }
 
 .form-cadas-admin fieldset button {
@@ -165,7 +179,7 @@ section .div-table-adm {
 #div-cadast-admin{
     /* margin-left: 25px; */
     width: 100vw;
-    padding-top: 13px;
+    /* padding-top: 13px; */
     padding-right: 16px;
 }
   
@@ -173,9 +187,16 @@ section .div-table-adm {
 
 .my-custom-scrollbar {
     /* position: relative; */
-    max-height: 412px;
-    width: 100vw;
+    /* max-height: 412px; */
+    width: 351px;
     overflow: auto;
+    background-color: white;
+    margin-left: 26px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 9px #424242;
+    margin-bottom: 50px;
+    height: 348px;
+    padding: 15px;
 }
 
 .table-wrapper-scroll-y {
@@ -196,82 +217,104 @@ section .div-table-adm {
     color: white;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
 
     .section-content-adm {
         /* width: 100%; */
         display: flex;
-        justify-content: end;
-        align-items: baseline;
+        /* justify-content: initial; */
         margin-top: 26px;
+        padding: 10px;
     }
 
     .page-adm .section-filtros {
-        width: 100vw;
-        display: flex;
+        /* width: 100vw; */
+        /* display: flex; */
+        /* background-color: #bfbfbf; */
+        height: auto;
+    }
+
+    .page-adm .section-content-adm {
+        padding: 10px;
     }
 
     .page-adm aside {
-        height: auto;
-        width: 249px;
-        /* padding: 20px; */
-        /* display: flex; */
+        height: 1300px;
+        width: 194PX;
+        padding: 20px;
+        display: flex;
         /* justify-content: center; */
-        /* flex-direction: column; */
+        flex-direction: column;
         /* align-items: center; */
+        background-color: #E24E42;
     }
 
     .page-adm section hr {
-        margin-left: 17px;
+        margin-left: 10px;
     } 
+
+    aside .alert-danger {
+        margin-left: 11px;
+    }
 
     .my-custom-scrollbar {
         /* position: relative; */
         max-height: 344px;
-        width: 83vw;
+        width: 77vw;
         overflow: auto;
     }
 
     .section-content-adm caption, th, td, p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     section .div-table-adm {
         padding: 21px;
-        margin-left: 28px;
+        margin-left: 54px;
         background-color: white;
         margin-bottom: 23px;
+        box-shadow: 1px 2px 9px #424242;
+        width: 73vw;
     }
     
     #div-cadast-admin {
         /* margin-left: 25px; */
         width: 104vw;
-        padding-top: 13px;
+        padding-top: 0;
         padding-left: 27px;
         display: flex;
     }
 
     .div-table-adm2 {
-        width: 50%;
+        width: 500px;
         padding: 21px;
         margin-left: 28px;
         background-color: white;
         border-radius: 10px;
-        margin-top: 25px;
+        margin-top: 0;
+        padding: 21px;
+        margin-left: 24px;
+        background-color: white;
+        margin-bottom: 23px;
+        box-shadow: 1px 2px 9px #424242;
     }
 
     .page-adm .section-content-adm #div-cadast-admin .form-cadas-admin fieldset .input-block label {
-        font-size: 1.5rem !important;
-
+        font-size: 1.2rem !important;
     }
 
     .page-adm aside li{
-        font-size: 1.5rem;
-        line-height: 50px;
+        font-size: 1rem;
+        line-height: 27px;
     }
 
     .page-adm aside li:hover{
-        font-size: 1.55rem;
+        font-size: 1.1rem;
     
     }
     
@@ -294,39 +337,214 @@ section .div-table-adm {
     }
 
     .form-cadas-admin {
-        margin-top: 20px;
+        margin-top: 0;
         margin-bottom: 27px;
-        width: 25%;
-        margin-right: 98px;
+        width: 254px;
+        /* margin-right: 98px; */
+        padding: 21px;
+        margin-left: 28px;
+        background-color: white;
+        margin-bottom: 23px;
+        box-shadow: 1px 2px 9px #424242;
+        height: 477px;
+        margin-left: 25px;
     }
 
     .seta-admin {
-        margin-left: 615px;
-        font-size: 3.5rem;
-        cursor: pointer;
-        margin-top: 61px;
+        margin-left: 27px;
+        font-size: 2rem;
+        /* cursor: pointer; */
+        margin-top: 11px;
     }
 
    
     .page-adm #titulo-adm h1 {
-        font-size: 4rem;
-    }
-
-    .page-adm section {
-        padding: 0 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         width: 100vw;
-    }
-
-    .page-adm section h2 {
+        padding-left: 14px;
+        /* height: 68px; */
         font-size: 2rem;
     }
 
+
+    .page-adm section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+
     .page-adm #titulo-adm {
-        height: 163px;
+        height: 74px;
+        display: flex;
+        /* width: 30vw; */
+        flex-wrap: wrap;
     }
 
     #regiao {
         font-size: 1.4rem;
     }
 
+}
+
+@media (min-width: 1200px) {
+
+    .section-content-adm {
+        /* width: 100%; */
+        display: flex;
+        /* justify-content: initial; */
+        margin-top: 26px;
+    }
+
+    .page-adm .section-filtros {
+        /* width: 100vw; */
+        display: flex;
+        /* background-color: #bfbfbf; */
+        height: auto;
+    }
+
+    .page-adm aside {
+        height: 1261px;
+        width: auto;
+        /* padding: 20px; */
+        display: flex;
+        /* justify-content: center; */
+        flex-direction: column;
+        align-items: center;
+        background-color: #E24E42;
+    }
+
+    .page-adm section hr {
+        margin-left: 28px;
+        width: 80%;
+    } 
+
+    aside .alert-danger {
+        margin-left: 33px;
+        width: 148px;
+        margin-top: 10px;
+        margin-right: 21px;
+    }
+
+    .my-custom-scrollbar {
+        /* position: relative; */
+        max-height: 344px;
+        width: 77vw;
+        overflow: auto;
+    }
+
+    .section-content-adm caption, th, td, p {
+        font-size: 1.5rem;
+    }
+
+    section .div-table-adm {
+        padding: 21px;
+        margin-left: 28px;
+        background-color: white;
+        margin-bottom: 23px;
+        box-shadow: 1px 2px 9px #424242;
+        width: 78vw;
+    }
+    
+    #div-cadast-admin {
+        /* margin-left: 25px; */
+        width: 104vw;
+        padding-top: 0;
+        padding-left: 27px;
+        display: flex;
+    }
+
+    .div-table-adm2 {
+        width: 691px;
+        padding: 21px;
+        margin-left: 28px;
+        background-color: white;
+        border-radius: 10px;
+        margin-top: 0;
+        padding: 21px;
+        margin-left: 28px;
+        background-color: white;
+        margin-bottom: 23px;
+        box-shadow: 1px 2px 9px #424242;
+    }
+
+    .page-adm .section-content-adm #div-cadast-admin .form-cadas-admin fieldset .input-block label {
+        font-size: 1.5rem !important;
+
+    }
+
+    .page-adm aside li{
+        font-size: 1.2rem;
+        line-height: 27px;
+    }
+
+    .page-adm aside li:hover{
+        font-size: 1.4rem;
+    
+    }
+    
+
+    .form-cadas-admin fieldset button {
+        width: 75px;
+        height: 34px;
+        font-size: 1.5rem;
+        margin-top: 20px;
+        background-color: var(--agua);
+        border-color: var(--agua);
+    }
+
+    .form-cadas-admin fieldset h2 {
+        margin: 0px 0px 20px 0px;
+        color: var(--color-text-complement);
+        font-weight: 700;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .form-cadas-admin {
+        margin-top: 0;
+        margin-bottom: 27px;
+        width: 25%;
+        margin-right: -2px;
+        padding: 21px;
+        /* margin-left: 28px; */
+        background-color: white;
+        margin-bottom: 23px;
+        box-shadow: 1px 2px 9px #424242;
+        margin-left: 0;
+    }
+
+    .seta-admin {
+        margin-left: 27px;
+        font-size: 2rem;
+        /* cursor: pointer; */
+        margin-top: 11px;
+    }
+
+   
+    .page-adm #titulo-adm h1 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100vw;
+        padding-left: 14px;
+        /* height: 68px; */
+        font-size: 2rem;
+    }
+
+
+    .page-adm section h2 {
+        font-size: 1.5rem;
+    }
+
+    .page-adm #titulo-adm {
+        height: 74px;
+        display: flex;
+        /* width: 30vw; */
+        flex-wrap: wrap;
+    }
+
+    #regiao {
+        font-size: 1.4rem;
+    }
 }
