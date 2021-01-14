@@ -1,0 +1,28 @@
+
+.feed header {
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: right;
+}
+
+.feed header img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.feed header div {
+    margin-left: 2.4rem;
+}
+
+.feed header div strong {
+    font-size: 1.6rem;
+    display: block;
+    color: var(--color-text-title);
+}
+
+.feed header div span {
+    font-size: 1.6rem;
+    display: block;
+    margin-top: .4rem;
+}

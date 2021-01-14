@@ -51,7 +51,7 @@ if ($_POST['who'] == 1) {
   
               // Redireciona o visitante de volta pro login
               echo "<script> alert('Login efetuado com sucesso!')</script>";
-              echo "<script> window.location.href='/MORADA+/index.php'</script>";
+              echo "<script> window.location.href='/MORADA+/feed.php'</script>";
               exit;
   
       } else {

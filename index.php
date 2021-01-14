@@ -91,6 +91,9 @@
                                         Olá, <?= $usuarios['UsuarioNome'];?>
                                     </button>
                                     <div class="dropdown-menu div-sair">
+                                        <a class="dropdown-item" href="feed.php">Feed</a>
+                                    </div>
+                                    <div class="dropdown-menu div-sair">
                                         <a class="dropdown-item" href="back-end/logout.php">Sair</a>
                                     </div>
                                 </div>
