@@ -4,7 +4,7 @@ Uma plataforma de aluguel compartilhado e de baixo custo, focada no público LGB
 
 ### Tecnologias usadas no do projeto
 
-HTML, CSS, JavaScript, MySQL, PHP e Boostrap.
+HTML, CSS, JavaScript, MySQL, PHP e Bootstrap.
 
 ### Código fonte
 
@@ -28,7 +28,6 @@ Criar banco de dados no MySQL com nome moradamais(existe um arquivo sql na pasta
 - [x] Login de administrador.
 - [x] Envio de mensagem pelo footer e listagem da mesma na pagina admin.
 - [x] Pagina do administrador com relatório de usuários e cadastro de novo admin.
-- [ ] Teste de personalidade.
 - [ ] Perfil do usuário.
 - [ ] Feed.
 - [ ] Chat.
