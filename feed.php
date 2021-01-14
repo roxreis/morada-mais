@@ -39,7 +39,7 @@
 		        	<ul class="navbar-nav ml-auto">
 			      		<li class="nav-item dropdown">
 			        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			          		<?= $usuarios['UsuarioNome'];?>
+
 			        		</a>
 			        		<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 			          			<a class="dropdown-item" href="#">Atualizar perfil</a>
@@ -74,43 +74,34 @@
 			      	</select>
 			    </div>
 
-		       	<?php
-		       		include_once 'back-end/db/conexao.php';
-				    mysqli_set_charset($con, "utf8mb4");
-				    $sql = "select * from usuario u join locador l on u.id_user = l.id_user;";
-					$result = mysqli_query($con, $sql);
-					while ($row = mysqli_fetch_assoc($result)) {
-						$nome      = $row['first_name'];
-						$sobrenome = $row['last_name'];
-						$bio = $row['bio'];
-						$descricaoImovel = $row['descricao_imovel'];
-						$regiao = $row['regiao'];
-						$img1 = $row['img'];
-						$img2 = $row['img2'];
-						$img3 = $row['img3'];
-				?>
+				<?php     
+					$locador_json = file_get_contents("http://localhost/MORADA+/back-end/buscaDadosJoin.php");
+					$locador = json_decode($locador_json, true);
 
-				<br>
-		        <div class="card">
-		         	<div class="card-body feed">
-			            <header>
-			               	<img src="<?php echo $img1 ?>">
-			               	<div>
-			                    <strong><?php echo $nome . ' ' . $sobrenome ?></strong>
-			                    <span><?php echo $regiao ?></span>
-			                </div>
-			            </header>
-			            <p><?php echo $descricaoImovel ?></p>
-			            <a href="#" class="btn btn-primary">Ver Perfil</a>
-			            <a href="#" class="btn btn-primary">Chat</a>
-		            </div>
-		        </div>  <br><br>
-
-		        <?php
-					}
-	    			mysqli_close($con);
-				?>
-
+					if ($locador != []):
+						foreach($locador as $l): ?>
+							<br>
+							<div class="card">
+								<div class="card-body feed">
+									<header>
+										<img src="">
+										<div>
+											<strong><?= $l['first_name']. ' ' . $l['last_name'] ?></strong>
+											<span><?= $l['regiao'] ?></span>
+											<span><?= $l['bio'] ?></span>
+										</div>
+									</header>
+									<p><?= $l['descricao_imovel'] ?></p>
+									<a href="#" class="btn btn-primary">Ver Perfil</a>
+									<a href="#" class="btn btn-primary">Chat</a>
+								</div>
+							</div>  <br><br>
+						<?php endforeach; ?>  
+					<?php else: ?>    
+						<div class="alert alert-primary" role="alert">
+							Não existem mensagens cadastradas
+						</div>
+					<?php endif; ?> 
 		  	</div>
 		</div>
 

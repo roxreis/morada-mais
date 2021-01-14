@@ -2,15 +2,13 @@
 
 include_once 'db/conexao.php';
 
-$tabela = $_GET['table'];
+$sql = "SELECT * FROM usuario 
+JOIN locador  
+ON locador.id_user = usuario.id_user;";
 
 
-setlocale(LC_MONETARY, 'pt_BR');
-
-$sql = "SELECT * FROM $tabela";
 $result = $con->query($sql);
 
 print_r( json_encode( $result->fetch_all(MYSQLI_ASSOC)));
-
 
 mysqli_close($con);
