@@ -63,7 +63,7 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                     </button>
-                    <a class="page-scroll" href="#page-top"><img class="img-logo" src="img/logos/logo.png"></a>
+                    <a class="page-scroll" href="#page-top"><img class="img-logo" src="img/logos/logo3.png"></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -84,15 +84,15 @@
                             </li>
                             <li>
                                 <a class="page-scroll" href="#contact">Contato</a>
+                            <li>
+                                <a class="page-scroll" href="feed.php">Feed</a>
+                            </li>
                             </li>
                             <li class="">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-danger dropdown-toggle nome-usuario" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Olá, <?= $usuarios['UsuarioNome'];?>
                                     </button>
-                                    <div class="dropdown-menu div-sair">
-                                        <a class="dropdown-item" href="feed.php">Feed</a>
-                                    </div>
                                     <div class="dropdown-menu div-sair">
                                         <a class="dropdown-item" href="back-end/logout.php">Sair</a>
                                     </div>
@@ -130,8 +130,12 @@
                 <div class="intro-text">
                     <div class="intro-lead-in"> <h1>LGBTQIA+, encontre alguém compatível para dividir o aluguel!</h1>
                 </div>
+                <?php if(isset($usuarios['UsuarioID']) && $usuarios != []):?>
+                <div></div>
+                <?php else: ?>
                     <a href="form-login.php" class="btn btn-xl" id="btn-login">Login</a>
                     <a href="form-cadast-usuario.php" class="btn btn-xl">Cadastrar</a>
+                <?php endif; ?>
                 </div>
             </div>
         </header>

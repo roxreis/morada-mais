@@ -256,9 +256,7 @@ aside.clients img {
 }
 section#contact {
   background-color: var(--roxo-escuro);
-  background-image: url('../img/map-image.png');
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url('../img/teste.png');
   padding: 26px 14px 26px 14px;
   margin-top: 0;
 }
