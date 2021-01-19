@@ -1,7 +1,9 @@
 
 .navbar-custom.affix {
-    background-color: #f7f7f7fb;
+    background-color: #ffffff;
     /* padding: 15px */
+    /* padding-top: 0px; */
+    padding-bottom: 0px;
 }
 
 .navbar-custom {
@@ -10,7 +12,9 @@
     padding: 15px
 }
 
-
+section h3.section-subheading {
+    color: #7b7b7b;
+}
 
 
 #btn-login {
@@ -57,6 +61,33 @@ header .intro-text .intro-lead-in h1 {
     line-height: 8.5rem;
 }
 
+.img-empresa {
+    font-size: 11rem;
+
+}
+
+#globe {
+    margin-top: 19px;
+}
+
+#plane{
+    margin-top: 5px;
+}
+
+#puzzle{
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.img-coracao {
+    width: 100px;
+    height: 100px;
+}
+
+.text-contact {
+    color: white;
+}
+
 
 @media (min-width: 992px) and (max-width: 1199.98px)  {
     
@@ -91,10 +122,10 @@ header .intro-text .intro-lead-in h1 {
     }
     
     
-    .navbar-custom.affix {
+    /* .navbar-custom.affix {
         background-color: #f7f7f7fb;
         padding: 15px 0;
-    }
+    } */
     .navbar-custom.affix .navbar-brand {
         font-size: 1.5em;
     }
@@ -124,23 +155,6 @@ header .intro-text .intro-lead-in h1 {
         /* margin-bottom: 25px; */
         margin-left: 138px;
     }
-    header .intro-text .intro-lead-in h1 {
-        font-style: italic;
-        font-size: 4rem;
-        line-height: 77px;
-        /* margin-bottom: 77px; */
-        background-color: #db2a1bbd;
-        /* padding: 23px 24px;
-        width: 1101px;
-        border-radius: 4px; */
-        /* font-style: initial; */
-        text-transform: initial;
-        font-weight: 400;
-        padding: 15px 29px;
-        margin-bottom: 73px;
-        margin-top: 0;
-    }
-
 
     header .intro-text .intro-heading {
         font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -390,41 +404,44 @@ header .intro-text .intro-lead-in h1 {
 @media (min-width: 1200px) {
     
     header {
-        height: 915px;
-        background-position-y: 73px;
+        height: 653px;
+        background-position-y: 72px;
+        background-position-x: 1px;
     }
     
     header .intro-text .intro-lead-in {
         width: auto;
-        margin-top: 163px;
+        margin-top: 126px;
+        margin-bottom: -55px;
     }
     
     header .intro-text {
-        padding-top: 133px;
+        padding-top: 150px;
         padding-bottom: 0px;
-        width: 896px;
-        margin-left: -34px;
+        width: 790px;
+        margin-left: 177px;
+        /* height: 500px; */
     }
     
     .navbar-custom {
-        height: 120px;
+        height: 125px;
         /* padding: 14px; */
-        background-color: white;
+        background-color: #ffffff;
+        /* margin-bottom: 0; */
     }
-    
-    .navbar-custom.affix {
-    padding: 19px 0;
-    }
+
     .navbar-custom .nav li a {
         font-size: 1.2rem;
     }
     
     #services {
         padding-top: 74px;
+        background-color: white;
     }
     
     .img-logo {
         width: 102px;
+        margin-left: 24px;
     }
 
     .timeline > li {
@@ -437,6 +454,7 @@ header .intro-text .intro-lead-in h1 {
         width: 170px;
         height: 170px;
         margin-left: -85px;
+        background-color: #e268ba;
     }
     .timeline > li .timeline-image h4 {
         margin-top: 40px;
@@ -447,6 +465,30 @@ header .intro-text .intro-lead-in h1 {
 
     .navbar-custom .nav li a {
         font-size: 1.4rem;
+    }
+
+    header .intro-text .intro-lead-in h1 {
+        font-size: 6rem;
+        line-height: 6.5rem;
+    }
+
+    .navbar{
+        margin-bottom: 0px;
+    }
+
+    .navbar-right {
+        padding: 25px;
+        margin-right: 13px;
+    }
+
+    .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+        background-color: white;
+    }
+    
+    .navbar-custom .navbar-collapse {
+        background-color: white;
+        /* padding: 1px; */
+        padding: 6px 0px 1px;
     }
     
 }

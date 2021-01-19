@@ -29,8 +29,8 @@ if (!isset($_SESSION['UsuarioID'])) {
         <title>Morada+ | Home</title>
 
         <!-- Bootstrap Core CSS -->
-		<!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
         <!-- Custom Fonts -->
         <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -103,6 +103,20 @@ if (!isset($_SESSION['UsuarioID'])) {
 
 		if ($locador != []) :
 			foreach ($locador as $l) : ?>
+			<div class="card mb-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+					<img src="..." class="card-img" alt="...">
+					</div>
+					<div class="col-md-8">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+					</div>
+					</div>
+				</div>
+			</div>
 				<div class="col-sm-4">
 					<div class="card-columns-fluid">
 						<div class="card mb-5 mx-auto " style="width: 25rem;">

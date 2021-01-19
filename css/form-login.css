@@ -4,7 +4,10 @@
     align-items: center;
     flex-direction: column;
     height: auto;
-    background-color: #c8c4bb;
+    background-color: #6615dd;
+    background-image: url(../img/coracao.png);
+    background-position-x: 100px;
+    background-position-y: 46px;
 }
 
 .main-login section {
@@ -79,14 +82,14 @@
     height: 34px;
     font-size: 1.6rem;
     margin-top: 20px;
-    background-color: var(--agua);
-    border-color: var(--agua);
+    background-color: #8c52ff;
+    border-color: #8c52ff;
     margin-bottom: 10px;
 }
 
 .form-login fieldset button:hover {
-    background-color: var(--agua-hover);
-    border-color: var(--agua-hover);
+    background-color: #7042cc;;
+    border-color: #7042cc;;
 }
 
 .seta-login {
@@ -100,7 +103,7 @@
 
 .clique-aqui-login {
     text-decoration: none !important;
-    color: var(--agua);
+    color: #8c52ff;
     cursor: pointer;
 
 }
@@ -155,13 +158,13 @@
 
     .clique-aqui-login {
         text-decoration: none !important;
-        color: var(--agua);
+        color: #8c52ff;
         cursor: pointer;
   
     }
 
     .clique-aqui-login:hover {
-        color: var(--agua-hover);
+        color: #7042cc;
     }
 
     .form-redefine-senha {
@@ -177,8 +180,8 @@
     }
 
     .btn-primary:hover {
-        background-color: var(--agua-hover);
-        border-color: var(--agua-hover);
+        background-color: #8c52ff;
+        border-color: #8c52ff;
     }
 
     .form-lembrete {
@@ -196,13 +199,13 @@
 
     .clique-aqui-login {
         text-decoration: none !important;
-        color: var(--agua);
+        color: #8c52ff;
         cursor: pointer;
 
     }
 
     .clique-aqui-login:hover {
-        color: var(--agua-hover);
+        color:  #7042cc;
     }
 
 }

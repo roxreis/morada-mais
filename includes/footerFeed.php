@@ -1,17 +1,4 @@
-        <!-- Contact Section -->
-        <section id="contact">
-            <div class="container">
-                <div class="row">
-                   
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                       
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+ 
 
         <footer>
             <div class="container">

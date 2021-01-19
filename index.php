@@ -56,8 +56,9 @@
 
     <body id="page-top" class="index">
         <!-- Navigation -->
-        <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-            <div class="container">
+        <nav id="mainNav" class=" navbar navbar-default navbar-custom navbar-fixed-top">
+            <div class="">
+            
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header page-scroll">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -125,16 +126,18 @@
         </nav>
 
         <!-- Header -->
-        <header >
-            <div class="container">
+        <header class="">
+            <div class="">
                 <div class="intro-text">
-                    <div class="intro-lead-in"> <h1>LGBTQIA+, encontre alguém compatível para dividir o aluguel!</h1>
+                    <div class="intro-lead-in"> <h1>Encontre alguém para dividir uma moradia!</h1>
                 </div>
                 <?php if(isset($usuarios['UsuarioID']) && $usuarios != []):?>
                 <div></div>
                 <?php else: ?>
-                    <a href="form-login.php" class="btn btn-xl" id="btn-login">Login</a>
-                    <a href="form-cadast-usuario.php" class="btn btn-xl">Cadastrar</a>
+                    <div class="btn-index">
+                        <a href="form-login.php" class="btn btn-xl" id="btn-login">Login</a>
+                        <a href="form-cadast-usuario.php" class="btn btn-xl">Cadastrar</a>
+                    </div>
                 <?php endif; ?>
                 </div>
             </div>
@@ -193,20 +196,23 @@
                         <ul class="timeline">
                             <li>
                                 <div class="timeline-image">
-                                    <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                                <span class="fa-stack fa-4x">
+                            <!-- <i class="fa fa-circle fa-stack-2x text-primary"></i> -->
+                            <i class="img-empresa fa fa-globe fa-stack-1x fa-inverse" id="globe"></i>
+                        </span>
                                 </div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
                                         <h4 class="subheading">Missão</h4>
                                     </div>
                                     <div class="timeline-body">
-                                        <p class="text-muted">Contribuir para que as pessoas desfrutem da sua própria autenticidade, sendo elas mesmas com segurança e liberdade</p>
+                                        <p class="text-muted">Contribuir para que as pessoas desfrutem de sua autenticidade com segurança e liberdade.</p>
                                     </div>
                                 </div>
                             </li>
                             <li class="timeline-inverted">
                                 <div class="timeline-image">
-                                    <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                                    <i class="img-empresa fa fa-plane fa-stack-1x fa-inverse" id="plane"></i>
                                 </div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
@@ -214,13 +220,13 @@
                                         <h4 class="subheading"></h4>
                                     </div>
                                     <div class="timeline-body">
-                                        <p class="text-muted">Ser uma referência em tecnologia que proporcione o melhor para sua moradia!</p>
+                                        <p class="text-muted">Ser o melhor meio tecnológico proporcionador de moradia para pessoas LGBTQIA+</p>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="timeline-image">
-                                    <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                                    <i class="img-empresa fa fa-puzzle-piece fa-stack-1x fa-inverse" id="puzzle"></i>
                                 </div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
