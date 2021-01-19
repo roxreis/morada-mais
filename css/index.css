@@ -14,15 +14,15 @@
 
 
 #btn-login {
-    background-color: var(--mustard);
-    border-color: var(--mustard);
+    background-color: #8c52ff;
+    border-color: #8c52ff;
     /* margin-bottom: 10px; */
     margin-right: 10px;
 }
 
 #btn-login:hover {
-    background-color: var(--mustard-hover);
-    border-color: var(--mustard-hover);
+    background-color: #7042cc;
+    border-color: #7042cc;
 }
 
 
@@ -42,16 +42,19 @@ div-sair{
 
 header .intro-text .intro-lead-in h1 {
     font-style: italic;
-    font-size: 4rem;
-    line-height: 49px;
+    font-size: 8rem;
+    /* line-height: 49px; */
     /* margin-bottom: 77px; */
-    background-color: #db2a1bbd;
+    font-family: Sifonn;
     /* font-style: initial; */
     text-transform: initial;
     font-weight: 400;
     padding: 15px 29px;
     margin-bottom: 73px;
     margin-top: 0;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    line-height: 8.5rem;
 }
 
 
@@ -387,7 +390,8 @@ header .intro-text .intro-lead-in h1 {
 @media (min-width: 1200px) {
     
     header {
-        height: 839px;
+        height: 915px;
+        background-position-y: 73px;
     }
     
     header .intro-text .intro-lead-in {
@@ -398,12 +402,14 @@ header .intro-text .intro-lead-in h1 {
     header .intro-text {
         padding-top: 133px;
         padding-bottom: 0px;
+        width: 896px;
+        margin-left: -34px;
     }
     
     .navbar-custom {
-        height: 135px;
-        padding: 14px;
-        background-color: transparent;
+        height: 120px;
+        /* padding: 14px; */
+        background-color: white;
     }
     
     .navbar-custom.affix {

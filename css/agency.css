@@ -18,6 +18,12 @@
 
 }
 
+@font-face {
+  font-family: 'Sifonn';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sifonn Pro'), url('/fonts/sifonn-cufonfonts-webfont/SIFONN_PRO.woff') format('woff');
+  }
 
 body {
   overflow-x: hidden;
@@ -124,9 +130,9 @@ fieldset[disabled] .btn-primary.active {
   background-color: white;
 }
 .btn-xl {
-  color: white;
-  background-color: var(--agua);
-  border-color: var(--agua);
+  color: #f1eded;
+  background-color: #ff75d4;
+  border-color: #ff75d4;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -141,8 +147,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
   color: white;
-  background-color: var(--agua-hover);
-  border-color: var(--agua-hover);
+  background-color: #bb549b;
+  border-color: #bb549b;
 }
 .btn-xl:active,
 .btn-xl.active,
@@ -206,7 +212,7 @@ fieldset[disabled] .btn-xl.active {
   font-weight: 400;
   letter-spacing: 1px;
   color: white;
-  color: #717171;
+  color: #6615dd;
   font-weight: 600;
   font-size: 2rem;
   cursor: pointer;

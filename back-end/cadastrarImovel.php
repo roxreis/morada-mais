@@ -3,38 +3,47 @@
 include_once 'db/conexao.php';
 
 if (isset($_POST['cadastrar'])) {
-        
+    
+    $titulo = $_POST['titulo'];
     $descricao_imovel = $_POST['descricao_imovel'];
     $regiao = $_POST['regiao'];
     $id_user = $_POST['id_user'];
 
-        //diretório para salvar as imagens
+    $data = date("d-m-y");
+    $uploads_dir = $_SERVER['DOCUMENT_ROOT'] . '/MORADA+/img/casas/';
+    $name = $_FILES['img']['name'];
+    $destino = $uploads_dir.$data.'-'.$name;
+    $destino_db = 'img/casas/'.$data.'-'.$name;
+    if (is_uploaded_file($_FILES['img']['tmp_name']))
+    {       
+      move_uploaded_file($_FILES['img']['tmp_name'], $destino);
+    }
+   
+    $uploads_dir2 = $_SERVER['DOCUMENT_ROOT'] . '/MORADA+/img/casas/';
+    $name2 = $_FILES['img2']['name'];
+    $destino2 = $uploads_dir2.$data.'-'.$name2;
+    $destino_db2 = 'img/casas/'.$data.'-'.$name2;
+    if (is_uploaded_file($_FILES['img2']['tmp_name']))
+    {       
+      move_uploaded_file($_FILES['img2']['tmp_name'], $destino2);
+    }
 
-    $pasta = $_FILES['img']['name'];
+    $uploads_dir3 = $_SERVER['DOCUMENT_ROOT'] . '/MORADA+/img/casas/';
+    $name3 = $_FILES['img3']['name'];
+    $destino3 = $uploads_dir3.$data.'-'.$name3;
+    $destino_db3 = 'img/casas/'.$data.'-'.$name3;
+    if (is_uploaded_file($_FILES['img3']['tmp_name']))
+    {       
+      move_uploaded_file($_FILES['img3']['tmp_name'], $destino3);
+    }
 
-    $nomeArquivo = $_FILES['img']['name'];
-    $nomeArquivo != " "  ? $localSaveFotoCasa = "/MORADA+/img/casas/$pasta/$nomeArquivo" : $localSaveFotoCasa = "Sem imagem";
-    $linkTemp = $_FILES['img']['tmp_name'];
-    move_uploaded_file($linkTemp, $localSaveFotoCasa);
-
-
-    $nomeArquivo2 = $_FILES['img2']['name'];
-    $nomeArquivo2 != " "  ? $localSaveFotoCasa2 = "/MORADA+/img/casas/$nomeArquivo2": $localSaveFotoCasa2 = "Sem imagem";
-    $linkTemp1 = $_FILES['img2']['tmp_name'];
-    move_uploaded_file($linkTemp1, $localSaveFotoCasa2);
-
-    $nomeArquivo3 = $_FILES['img3']['name'];
-    $nomeArquivo3 != " " ? $localSaveFotoCasa3 = "/MORADA+/img/casas/$nomeArquivo3" : $localSaveFotoCasa3 = "Sem imagem";
-    $linkTemp2 = $_FILES['img3']['tmp_name'];
-    move_uploaded_file($linkTemp2, $localSaveFotoCasa3);
-
-    $inserir = "INSERT INTO locador (descricao_imovel, regiao, img, img2, img3, id_user) VALUES ('$descricao_imovel', '$regiao', '$nomeArquivo', '$nomeArquivo2','$nomeArquivo3', '$id_user' )";
+    $inserir = "INSERT INTO locador (titulo, descricao_imovel, regiao, img, img2, img3, id_user) VALUES ('$titulo', '$descricao_imovel', '$regiao', '$destino_db', '$destino_db2','$destino_db3', '$id_user' )";
 
 
     if (mysqli_query($con, $inserir)) {
         
         echo "<script> alert('Imóvel cadastrado com sucesso!')</script>";
-        echo "<script> window.location.href='/MORADA+/form-login.php'</script>";
+        echo "<script> window.location.href='/MORADA+/feed.php'</script>";
 
     } else {
 

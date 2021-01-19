@@ -46,7 +46,7 @@
            <a href="index.php"> <i class="fa fa-arrow-left seta" data-toggle="tooltip" data-placement="top" tabindex="0" title="Ir para Home" ></i></a>
         </div>    
         <section id="section-form-cadastro" class="d-flex justify-content-center">
-            <form action="back-end/cadastrarImovel.php"class="bg-light-gray" id="cadastro-usuario" method="POST" enctype="multipart/form-data" >
+            <form action="back-end/cadastrarImovel.php" class="bg-light-gray" id="cadastro-usuario" method="POST" enctype="multipart/form-data" >
                 <fieldset  >
                     <h2>Dados do imóvel</h2>
                     <div class="input-block">
