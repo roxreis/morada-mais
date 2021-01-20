@@ -62,7 +62,7 @@ if (!isset($_SESSION['UsuarioID'])) {
                             <a href="#page-top"></a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="feed-usuarios.php">Ver Usuarios</a>
+                            <a class="page-scroll" href="feed.php">Ver Imóvel</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="form-cadast-imovel.php">Cadastrar Imóvel</a>
@@ -86,29 +86,26 @@ if (!isset($_SESSION['UsuarioID'])) {
         <main>
             <section class="section-feed container">
                         <?php
-                            $locador_json = file_get_contents("http://localhost/MORADA+/back-end/buscaDadosJoin.php");
-                            $locador = json_decode($locador_json, true);
+                            $usuarios_json = file_get_contents("http://localhost/MORADA+/back-end/buscaDadosJoinUsuarios.php");
+                            $usuarios = json_decode($usuarios_json, true);
 
-                    if ($locador != []) :
-                        foreach ($locador as $l) : ?>
+                    if ($usuarios != []) :
+                        foreach ($usuarios as $u) : ?>
                             <div class="card mb-3">
                                 <div class="row card-feed">
                                     <div class="col-md-5">
-                                    <img src=<?= $l['img'] ?> class="img-feed" alt="<?= $l['img'] ?>">
+                                    <img src=<?= $u['img'] ?> class="img-feed" alt="<?= $u['img'] ?>">
                                     </div>
                                     <div class="col-md-6">
                                         <div class="card-body">
-                                        <strong class="card-title"><?= $l['titulo'] ?></strong>
+                                        <strong class="card-title"><?= $u['first_name'] ?></strong>
                                             <!-- dados vindo do join com a tabela usuario -->
 
-                                            <p class="card-text">Meu perfil: <?= $l['bio'] ?></p>
-                                            <!-- dados vindo dda tabela locador -->								
-                                            <p class="card-text">Região: <?= $l['regiao'] ?></p>
-                                            <p class="card-text">Descrição: <?= $l['descricao_imovel'] ?></p>
-                                            <p class="card-text"> <strong>Valor: R$ <?= $l['valor_aluguel'] ?>, mensal</strong></p>
+                                            <p class="card-text">Meu perfil: <?= $u['bio'] ?></p>
+                                            <!-- dados vindo dda tabela usuarios -->							  
                                             <a href="#" class="btn btn-primary">Detalhes</a>
                                             <a href="#" class="btn btn-primary">Chat</a>
-                                            <p class="card-text"><small class="text-muted">Data da oferta: <?= $l['data_cadast'] ?></small></p>
+                                            <p class="card-text"><small class="text-muted">Data de Cadastro: <?= $u['cadastro'] ?></small></p>
                                         </div>
                                     </div>
                                 </div>
