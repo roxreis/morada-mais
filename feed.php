@@ -14,7 +14,6 @@ if (!isset($_SESSION['UsuarioID'])) {
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +28,10 @@ if (!isset($_SESSION['UsuarioID'])) {
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- botões -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
 
     <!-- Theme CSS -->
     <link href="css/agency.min.css" rel="stylesheet">
