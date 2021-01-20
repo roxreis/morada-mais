@@ -75,6 +75,7 @@
                             <th scope="col">Cadastrado desde</th>
                             <th scope="col">foto</th>
                             <th scope="col">Editar</th>
+                            <th scope="col">Excluir</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -98,7 +99,8 @@
                                         </td>
                                         <td><?= $usuario['cadastro']; ?></td>
                                         <td><img src="<?= $usuario['img']; ?>" style="width: 60px" alt=""></td>
-                                        <td><a class="badge badge-info"  href="back-end/editarUsuario.php?id=<?= $usuario['id_user']; ?>">Editar</a></td>
+                                        <td><a class="btn btn-info"  href="back-end/editarUsuario.php?id=<?= $usuario['id_user']; ?>">Editar</a></td>
+                                        <td><a class="btn btn-danger" href="javascript:func()"onclick="confirmacao(<?= $usuario['id_user']; ?>)">Excluir</a></td>
                                     </tr>
                                 <?php endforeach; ?>  
                             <?php else: ?>    
@@ -197,3 +199,12 @@
             </section>
         </div>
     </main>
+
+    <script language="Javascript">
+        function confirmacao(id) {
+            var resposta = confirm("Deseja remover esse registro?");
+            if (resposta == true) {
+                window.location.href = "back-end/excluirUsuario.php?id="+id;
+            }
+        }
+    </script>

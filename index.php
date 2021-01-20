@@ -16,7 +16,6 @@
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -123,20 +122,17 @@
                             </li>
                             
                             <li class="">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-danger dropdown-toggle nome-usuario" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Olá, <?= $usuarios['UsuarioNome'];?>
-                                        </button>
-                                        <div class="dropdown-menu div-sair">
-                                            <a class="dropdown-item" href="back-end/logout.php">Sair</a>
-                                            <a class="page-scroll" href="feed.php">Feed</a>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-danger dropdown-toggle nome-usuario" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Olá, <?= $usuarios['UsuarioNome'];?>
+                                    </button>
+                                    <div class="dropdown-menu div-sair">
+                                        <a class="dropdown-item" href="back-end/logout.php">Sair</a>
+                                        <a class="page-scroll" href="feed.php">Feed</a>
 
-                                        </div>
                                     </div>
-                                </li>
-
-                        
-                            
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
