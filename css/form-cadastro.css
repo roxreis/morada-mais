@@ -11,10 +11,10 @@ section{
     padding: 0;
 }
 
-.body-form-cadastro  {/* background-color: #c8c4bb; */display: flex;flex-direction: column;}
+.body-form-cadastro  {background-color: #c8c4bb;display: flex;flex-direction: column;}
 
 .div-form-banner {
-    background-image: url(../img/header-bg.jpg);
+
     background-repeat: no-repeat;
     background-size: cover;
     height: 304px;
@@ -88,7 +88,7 @@ section{
 @media (min-width: 768px) {
 
     .div-form-banner {
-        background-image: url(../img/header-bg.jpg);
+        background-color:#6615dd;
         background-repeat: no-repeat;
         background-size: cover;
         background-position-x: 5px;
@@ -103,7 +103,7 @@ section{
             justify-content: center;
             /* align-items: center; */
             /* padding-bottom: 0px; */
-            background-color: #c8c4bb;
+            background-color: #6615dd;
             padding: 0;
         }
         
