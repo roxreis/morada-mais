@@ -42,7 +42,6 @@ if (!isset($_SESSION['UsuarioID'])) {
     
     <title>Morada+ | Feed</title>
 </head>
-
     <body class="body-feed">
         <!-- Navigation -->
         <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -53,6 +52,7 @@ if (!isset($_SESSION['UsuarioID'])) {
                         <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                     </button>
                     <a class="page-scroll" href="index.php"><img class="img-logo" src="img/logos/logo3.png"></a>
+
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -80,43 +80,45 @@ if (!isset($_SESSION['UsuarioID'])) {
             </div>
             <!-- /.container-fluid -->
         </nav>
-    <section class="section-feed container">
-                <?php
-                    $locador_json = file_get_contents("http://localhost/MORADA+/back-end/buscaDadosJoin.php");
-                    $locador = json_decode($locador_json, true);
+        <main>
+            <section class="section-feed container">
+                        <?php
+                            $locador_json = file_get_contents("http://localhost/MORADA+/back-end/buscaDadosJoin.php");
+                            $locador = json_decode($locador_json, true);
 
-            if ($locador != []) :
-                foreach ($locador as $l) : ?>
-                    <div class="card mb-3">
-                        <div class="row card-feed">
-                            <div class="col-md-5">
-                            <img src=<?= $l['img'] ?> class="img-feed" alt="<?= $l['img'] ?>">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                <strong class="card-title"><?= $l['titulo'] ?></strong>
-                                    <!-- dados vindo do join com a tabela usuario -->
+                    if ($locador != []) :
+                        foreach ($locador as $l) : ?>
+                            <div class="card mb-3">
+                                <div class="row card-feed">
+                                    <div class="col-md-5">
+                                    <img src=<?= $l['img'] ?> class="img-feed" alt="<?= $l['img'] ?>">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                        <strong class="card-title"><?= $l['titulo'] ?></strong>
+                                            <!-- dados vindo do join com a tabela usuario -->
 
-                                    <p class="card-text">Meu perfil: <?= $l['bio'] ?></p>
-                                    <!-- dados vindo dda tabela locador -->								
-                                    <p class="card-text">Região: <?= $l['regiao'] ?></p>
-                                    <p class="card-text">Descrição: <?= $l['descricao_imovel'] ?></p>
-                                    <p class="card-text"> <strong>Valor: R$ <?= $l['valor_aluguel'] ?>, mensal</strong></p>
-                                    <a href="#" class="btn btn-primary">Detalhes</a>
-                                    <a href="#" class="btn btn-primary">Chat</a>
-                                    <p class="card-text"><small class="text-muted">Data da oferta: <?= $l['data_cadast'] ?></small></p>
+                                            <p class="card-text">Meu perfil: <?= $l['bio'] ?></p>
+                                            <!-- dados vindo dda tabela locador -->								
+                                            <p class="card-text">Região: <?= $l['regiao'] ?></p>
+                                            <p class="card-text">Descrição: <?= $l['descricao_imovel'] ?></p>
+                                            <p class="card-text"> <strong>Valor: R$ <?= $l['valor_aluguel'] ?>, mensal</strong></p>
+                                            <a href="#" class="btn btn-primary">Detalhes</a>
+                                            <a href="#" class="btn btn-primary">Chat</a>
+                                            <p class="card-text"><small class="text-muted">Data da oferta: <?= $l['data_cadast'] ?></small></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        <?php endforeach; ?>
+                    <?php else : ?>
+                        <div class="alert alert-primary" role="alert">
+                            Não existem imóveis cadastrados
                         </div>
-                    </div>
-                <?php endforeach; ?>
-            <?php else : ?>
-                <div class="alert alert-primary" role="alert">
-                    Não existem imóveis cadastrados
-                </div>
-            <?php endif; ?>
-            
-    </section>
+                    <?php endif; ?>
+                    
+            </section>
+        </main>
 	<div class="footer">
 		<?php include_once('includes/footer.php') ?> 
 	</div>

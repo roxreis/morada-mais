@@ -455,10 +455,11 @@ header .intro-text .intro-lead-in h1 {
     }
 
     .div-sair {
-        min-width: 77px;
+        width: 124px;
+        min-width: 0px;
+        margin-top: 43px;
     }
-
-    
+   
     
     .navbar-custom {
         height: 125px;

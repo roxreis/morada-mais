@@ -9,7 +9,7 @@ $ok = isset($lembrete) ? $lembrete : false;
 
 
 if ($ok) {
-    $sql = "SELECT * FROM usuarios WHERE (`lembrete_senha` = '".$lembrete."')";
+    $sql = "SELECT * FROM usuario WHERE (`lembrete_senha` = '".$lembrete."')";
     $resultado = mysqli_query($con, $sql);
 }
 
@@ -19,7 +19,7 @@ if (mysqli_num_rows($resultado) > 0) {
 
   while ($usuario = $resultado->fetch_assoc()) {
 
-    $id = $usuario['user_id'];
+    $id = $usuario['id_user'];
 
    echo "<script> alert('Sua frase de segurança confere! Redefina sua senha')</script>";
    echo "<script> window.location.href='/MORADA+/form-redefine-senha.php?id=$id'</script>";

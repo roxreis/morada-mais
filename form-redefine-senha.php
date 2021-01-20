@@ -6,14 +6,14 @@ $ok = isset($id) ? $id : false;
 
 
 if ($ok) {
-    $sql = "SELECT * FROM usuarios WHERE user_id = '$id'";
+    $sql = "SELECT * FROM usuario WHERE id_user = '$id'";
     $resultado = mysqli_query($con, $sql);
 } 
 
 if (isset($_POST['editarSenha'])) {
    
     $novaSenha = SHA1($_POST['novaSenha']);
-    $update = "UPDATE usuarios SET user_pass='$novaSenha' WHERE user_id=$id";
+    $update = "UPDATE usuario SET user_pass='$novaSenha' WHERE id_user=$id";
 
     if (mysqli_query($con, $update)) {
 
