@@ -89,12 +89,13 @@ if (!isset($_SESSION['UsuarioID'])) {
                             $usuarios_json = file_get_contents("http://localhost/MORADA+/back-end/buscaDadosJoinUsuarios.php");
                             $usuarios = json_decode($usuarios_json, true);
 
+
                     if ($usuarios != []) :
-                        foreach ($usuarios as $u) : ?>
+                        foreach ($usuarios as $u):?>
                             <div class="card mb-3">
                                 <div class="row card-feed">
                                     <div class="col-md-5">
-                                    <img src=<?= $u['img'] ?> class="img-feed" alt="<?= $u['img'] ?>">
+                                    <img src="<?= $u['img'] ?>" class="img-feed" alt="<?= $u['img'] ?>">
                                     </div>
                                     <div class="col-md-6">
                                         <div class="card-body">

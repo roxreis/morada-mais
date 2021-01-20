@@ -72,7 +72,7 @@
 section .div-table-adm {
     padding: 15px;
     background-color: white;
-    width: 351px;
+    width: 294px;
     margin-left: 26px;
     margin-bottom: 10px;
     box-shadow: 1px 2px 9px #424242;
@@ -135,7 +135,7 @@ aside .alert-danger {
 
 
 .form-cadas-admin {
-    width: 351px;
+    width: 295px;
     background-color: white;
     border-radius: 10px;
     border: 1px solid rgb(226 226 226);
@@ -179,7 +179,7 @@ aside .alert-danger {
 
 #div-cadast-admin{
     /* margin-left: 25px; */
-    width: 100vw;
+    width: 60vw;
     /* padding-top: 13px; */
     padding-right: 16px;
 }
@@ -189,7 +189,7 @@ aside .alert-danger {
 .my-custom-scrollbar {
     /* position: relative; */
     /* max-height: 412px; */
-    width: 351px;
+    width: 295px;
     overflow: auto;
     background-color: white;
     margin-left: 26px;

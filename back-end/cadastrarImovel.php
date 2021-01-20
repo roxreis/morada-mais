@@ -8,6 +8,7 @@ if (isset($_POST['cadastrar'])) {
     $descricao_imovel = $_POST['descricao_imovel'];
     $regiao = $_POST['regiao'];
     $id_user = $_POST['id_user'];
+    $valor_aluguel = $_POST['valor_aluguel'];
 
     $data = date("d-m-y");
     $uploads_dir = $_SERVER['DOCUMENT_ROOT'] . '/MORADA+/img/casas/';
@@ -37,7 +38,7 @@ if (isset($_POST['cadastrar'])) {
       move_uploaded_file($_FILES['img3']['tmp_name'], $destino3);
     }
 
-    $inserir = "INSERT INTO locador (titulo, descricao_imovel, regiao, img, img2, img3, id_user) VALUES ('$titulo', '$descricao_imovel', '$regiao', '$destino_db', '$destino_db2','$destino_db3', '$id_user' )";
+    $inserir = "INSERT INTO locador (titulo, descricao_imovel, regiao, img, img2, img3, id_user, valor_aluguel) VALUES ('$titulo', '$descricao_imovel', '$regiao', '$destino_db', '$destino_db2','$destino_db3', '$id_user', '$valor_aluguel')";
 
 
     if (mysqli_query($con, $inserir)) {

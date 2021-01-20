@@ -84,6 +84,7 @@ if (!isset($_SESSION['UsuarioID'])) {
             <!-- /.container-fluid -->
         </nav>
         <main>
+            <div>
             <section class="section-feed container">
                         <?php
                             $locador_json = file_get_contents("http://localhost/MORADA+/back-end/buscaDadosJoin.php");
@@ -91,8 +92,8 @@ if (!isset($_SESSION['UsuarioID'])) {
 
                     if ($locador != []) :
                         foreach ($locador as $l) : ?>
-                            <div class="card mb-3">
-                                <div class="row card-feed">
+                            <div class="card mb-3 card-feed">
+                                <div class="row">
                                     <div class="col-md-5">
                                     <img src=<?= $l['img'] ?> class="img-feed" alt="<?= $l['img'] ?>">
                                     </div>
@@ -104,7 +105,7 @@ if (!isset($_SESSION['UsuarioID'])) {
                                             <p class="card-text">Meu perfil: <?= $l['bio'] ?></p>
                                             <!-- dados vindo dda tabela locador -->								
                                             <p class="card-text">Região: <?= $l['regiao'] ?></p>
-                                            <p class="card-text">Descrição: <?= $l['descricao_imovel'] ?></p>
+                                            <p class="card-text ">Descrição: <?= $l['descricao_imovel'] ?></p>
                                             <p class="card-text"> <strong>Valor: R$ <?= $l['valor_aluguel'] ?>, mensal</strong></p>
                                             <a href="#" class="btn btn-primary">Detalhes</a>
                                             <a href="#" class="btn btn-primary">Chat</a>
@@ -121,6 +122,7 @@ if (!isset($_SESSION['UsuarioID'])) {
                     <?php endif; ?>
                     
             </section>
+            </div>
         </main>
 	<div class="footer">
 		<?php include_once('includes/footer.php') ?> 

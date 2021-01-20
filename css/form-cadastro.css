@@ -11,16 +11,17 @@ section{
     padding: 0;
 }
 
-.body-form-cadastro  {background-color: #c8c4bb;display: flex;flex-direction: column;}
-
-.div-form-banner {
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 304px;
-    background-position-x: -4px;
-    background-position-y: 0;
+footer{
+    background-color: #fff;
 }
+
+.body-form-cadastro  {
+    background-color: #6615dd;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-form-banner {background-repeat: no-repeat;background-size: cover;height: 318px;background-position-x: -4px;background-position-y: 0;}
 
 .div-form-banner img {
     color: white;
@@ -33,7 +34,7 @@ section{
     justify-content: center;
     /* align-items: center; */
     /* padding-bottom: 0px; */
-    background-color: #c8c4bb;
+    background-color: #6615dd;
     padding: 0;
     /* height: auto; */
 }
@@ -76,13 +77,14 @@ section{
     height: 34px;
     font-size: 1.6rem;
     margin-top: 20px;
-    background-color: var(--agua);
-    border-color: var(--agua);
+    background-color: #6615dd;
+    border-color:  #6615dd;
 }
 
 #cadastro-usuario fieldset button:hover {
-    background-color: var(--agua-hover);
-    border-color: var(--agua-hover);
+    background-color: #5d13cc;
+    border-color: #5d13cc;
+    ;
 }
 
 @media (min-width: 768px) {

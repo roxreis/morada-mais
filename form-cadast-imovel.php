@@ -50,6 +50,10 @@
                 <fieldset  >
                     <h2>Dados do imóvel</h2>
                     <div class="input-block">
+                        <label for="titulo">Descrição do imóvel</label>
+                        <input name="titulo" placeholder="Casa proximo metrô" required>
+                    </div>
+                    <div class="input-block">
                         <label for="name">Descrição do imóvel</label>
                         <input name="descricao_imovel" id="descricao_imovel" placeholder="ex. 2 quartos, sala ampla e cozinha" required>
                     </div>
@@ -73,6 +77,10 @@
                     <div class="input-block ">
                         <label for="img3">foto do imóvel - imagem 03</label>
                         <input type="file" name="img3" class="form-img">
+                    </div>
+                    <div class="input-block ">
+                        <label for="valor_aluguel">Valor da contribuição</label>
+                        <input type="number" name="valor_aluguel">
                     </div>
                     <input name="id_user" value= "<?php echo $_SESSION["UsuarioID"] ?>" type="hidden">
                     <button type="submit" class="btn btn-success" name="cadastrar">Enviar</button>
