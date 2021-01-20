@@ -1,3 +1,4 @@
+header {height: 952px;}
 
 .navbar-custom.affix {
     background-color: #ffffff;
@@ -9,7 +10,7 @@
 .navbar-custom {
     /* background-color: #f7f7f7fb; */
     Border-color: transparent;
-    padding: 15px
+    padding: 15px 25px;
 }
 
 section h3.section-subheading {
@@ -38,6 +39,8 @@ div-sair{
     width: 50px;
 }
 
+
+
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
     background-color: transparent;
     border-color: transparent;
@@ -46,7 +49,7 @@ div-sair{
 
 header .intro-text .intro-lead-in h1 {
     font-style: italic;
-    font-size: 8rem;
+    font-size: 7rem;
     /* line-height: 49px; */
     /* margin-bottom: 77px; */
     font-family: Sifonn;
@@ -54,20 +57,19 @@ header .intro-text .intro-lead-in h1 {
     text-transform: initial;
     font-weight: 400;
     padding: 15px 29px;
-    margin-bottom: 73px;
-    margin-top: 0;
+    /* margin-bottom: 73px; */
+    margin-top: 121px;
     font-weight: 700;
     /* text-transform: uppercase; */
     line-height: 8.5rem;
 }
 
 .img-empresa {
-    font-size: 11rem;
-
+    font-size: 5rem;
 }
 
 #globe {
-    margin-top: 19px;
+    margin-top: -4px;
 }
 
 #plane{
@@ -78,6 +80,11 @@ header .intro-text .intro-lead-in h1 {
     margin-top: 0px;
     margin-left: 10px;
 }
+
+/* .fa-stack {
+ 
+    width: 1em;
+} */
 
 .img-coracao {
     width: 100px;
@@ -143,6 +150,7 @@ header .intro-text .intro-lead-in h1 {
     color: white;
     height: 817px;
     }
+
     header .intro-text {
         padding-top: 200px;
         padding-bottom: 50px;
@@ -422,6 +430,35 @@ header .intro-text .intro-lead-in h1 {
         margin-left: 177px;
         /* height: 500px; */
     }
+
+    
+        
+    .btn-danger.active.focus, .btn-danger.active:focus, .btn-danger.active:hover, .btn-danger:active.focus, .btn-danger:active:focus, .btn-danger:active:hover, .open>.dropdown-toggle.btn-danger.focus, .open>.dropdown-toggle.btn-danger:focus, .open>.dropdown-toggle.btn-danger:hover {
+        color: #fff;
+        background-color: #ee68c1;
+        border-color: #e663ba;
+    }
+
+    nav ul li .nome-usuario {
+        border-right: none !important;
+        color: white!important;
+        background-color: #ff75d2;
+        font-weight: 900;
+        border-color:#e668bd;
+        margin-top: 7px;
+
+    }
+    
+    nav ul li .nome-usuario:hover{
+        background-color: #ee68c1;
+        border-color: #e663ba;
+    }
+
+    .div-sair {
+        min-width: 77px;
+    }
+
+    
     
     .navbar-custom {
         height: 125px;
@@ -465,6 +502,7 @@ header .intro-text .intro-lead-in h1 {
 
     .navbar-custom .nav li a {
         font-size: 1.4rem;
+        margin-left: 13px;
     }
 
     header .intro-text .intro-lead-in h1 {
@@ -491,6 +529,26 @@ header .intro-text .intro-lead-in h1 {
         padding: 6px 0px 1px;
     }
     
+}
+
+
+
+@media (min-width: 1400px){
+
+    header {
+        height: 919px;
+        background-position-y: 43px;
+        background-position-x: 0px;
+    }
+
+    header .intro-text {
+        padding-top: 218px;
+        padding-bottom: 0px;
+        width: 972px;
+        margin-left: 296px;
+    }
+    
+
 }
       
  

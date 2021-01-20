@@ -12,10 +12,12 @@
 
 .main-login section {
     height: 467px;
+    display: flex;
+    justify-content: center;
 }
 
 .form-login fieldset{
-    /* width: 121%; */
+    width: 93%;
     padding: 32px;
     /* margin: 100px; */
     background-color: white;
@@ -195,7 +197,7 @@
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px ) and (max-width: 1399px) {
 
     .clique-aqui-login {
         text-decoration: none !important;
@@ -206,6 +208,16 @@
 
     .clique-aqui-login:hover {
         color:  #7042cc;
+    }
+
+}
+
+
+@media (min-width: 1400px){
+
+    .main-login{
+        background-position-x: 354px;
+        background-position-y: -26px;
     }
 
 }
