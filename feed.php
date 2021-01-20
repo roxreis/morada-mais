@@ -61,9 +61,9 @@ if (!isset($_SESSION['UsuarioID'])) {
                         <li class="hidden">
                             <a href="#page-top"></a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a class="page-scroll" href="feed-usuarios.php">Ver Usuarios</a>
-                        </li>
+                        </li> ENTREGA FUTURA!!-->
                         <li>
                             <a class="page-scroll" href="form-cadast-imovel.php">Cadastrar Imóvel</a>
                         </li>
