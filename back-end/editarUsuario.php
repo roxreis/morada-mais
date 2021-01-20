@@ -27,16 +27,10 @@ if (isset($editar)) {
     } else {
        $email = $_POST['email'];
     }
-    $locador = $_POST['locador'];
     $ativo = $_POST['ativo']; 
 
-    isset($_POST['locatario']) ? $locatario = $_POST['locatario'] : $locatario = ""; 
-    isset($_POST['regiao']) ? $regiao = $_POST['regiao'] : $regiao =  ""; 
-    isset($_POST['descricao_imovel']) ? $descricaoImovel = $_POST['descricao_imovel'] : $descricaoImovel = ""; 
-
-
-
-    $update = "UPDATE usuarios SET user_email='$email', user_ativo='$ativo', check_locador='$locador', check_locatario='$locatario', regiao='$regiao', descricao_imovel='$descricaoImovel' WHERE user_id=$idUsuario";
+ 
+    $update = "UPDATE usuario SET user_email='$email', user_ativo='$ativo', img='$img' WHERE id_user=$idUsuario";
 
     if (mysqli_query($con, $update)) {
         echo "<script> alert('Editado com sucesso!')</script>";
@@ -77,82 +71,51 @@ if (isset($editar)) {
 
 
         <div class="div-form-banner" >
-           <a href="/index.php"> <i class="fa fa-arrow-left seta" data-toggle="tooltip" data-placement="top" tabindex="0" title="Ir para Home" ></i></a>
+           <a href="../index.php"> <i class="fa fa-arrow-left seta" data-toggle="tooltip" data-placement="top" tabindex="0" title="Ir para Home" ></i></a>
 
         </div>    
         <section id="section-form-cadastro" class="d-flex justify-content-center">
             <form action=""class="bg-light-gray" id="cadastro-usuario" method="POST"  >
-            <?php if($resultado->num_rows > 0): ?> 
-                <?php while ($usuario = $resultado->fetch_assoc()): ?>
+                <?php $usuario_json = file_get_contents("http://localhost/MORADA+/back-end/buscaDadosBancoId.php?id=$idUsuario");
+                      $usuarios = json_decode($usuario_json, true);?> 
                     <fieldset  >
-                        <h2>Editar dados Cadastro</h2>
-                        <div class="input-block">
-                            <label for="name">Nome</label>
-                            <input name="first_name" readonly value="<?=$usuario['first_name'];?>" id="name" required>
-                        </div>
-                        <div class="input-block">
-                            <label for="name">Sobrenome</label>
-                            <input name="last_name" readonly value="<?=$usuario['last_name'];?>" id="name" required>
-                        </div>
-                        <div class="input-block">
-                            <label for="email">Email <small>(eu@eu.com.br)</small> </label>
-                            <input name="email" id="email" value="<?=$usuario['user_email'];?>" type="email" required>
-                        </div>
-                        <div class="input-block">
-                            <label for="cpf">CPF<small>(somente números)</small></label>
-                            <input name="cpf" id="cpf" disabled value="<?=$usuario['user_cpf'];?>"  type="number"  required>
-                        </div>
-                         <!-- <div class="input-block ">
-                            <label for="img">Sua Foto</label>
-                            <input type="file" name="img" class="form-img">
-                        </div> -->
-                        <input type="number" name="nivel" value="usuario comum" hidden>
+                        <?php if ($usuarios != []):
+                            foreach($usuarios as $usuario): ?> 
+                                <h2>Editar dados Cadastro</h2>
+                                <div class="input-block">
+                                    <label for="name">Nome</label>
+                                    <input name="first_name" readonly value="<?=$usuario['first_name'];?>" id="name" required>
+                                </div>
+                                <div class="input-block">
+                                    <label for="name">Sobrenome</label>
+                                    <input name="last_name" readonly value="<?=$usuario['last_name'];?>" id="name" required>
+                                </div>
+                                <div class="input-block">
+                                    <label for="email">Email <small>(eu@eu.com.br)</small> </label>
+                                    <input name="email" id="email" value="<?=$usuario['user_email'];?>" type="email" required>
+                                </div>
+                                <div class="input-block">
+                                    <label for="cpf">CPF<small>(somente números)</small></label>
+                                    <input name="cpf" id="cpf" disabled value="<?=$usuario['user_cpf'];?>"  type="number"  required>
+                                </div>
+                                <div class="input-block ">
+                                    <label for="img">Sua Foto</label>
+                                    <img src="<?=$usuario['img'];?>" type="file"  class="form-img">
+                                    <input type="file" name="img" class="form-img">
+                                </div>
+                                <input type="number" name="nivel" value="usuario comum" hidden>
 
-                        <div class="input-block">
-                            <label id="ativo" for="ativo">Cadastro ativo?</label>
-                            <select class="form-img" name="ativo" class="form-control">
-                                <option value='1' selected>Ativo</option>
-                                <option value='2'>Inativo</option>
-                            </select>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input"  type="checkbox" name="locador" id="exampleRadios1" value="1" >
-                            <label class="form-check-label " for="exampleRadios1">
-                                Estou procurando casa para dividir o aluguel
-                            </label>
-                        </div>
-                        <hr>
-                        <div class="form-check">
-                            <input class="form-check-input" name="locatario" type="checkbox" id="exampleRadios2" value="1">
-                            <label class="form-check-label ml-3" for="exampleRadios2">
-                                Estou oferecendo minha casa para dividir o aluguel
-                            </label>
-                        </div>
-                        <div class="input-block">
-                            <label id="regiao" for="regiao">Região de São Paulo</label>
-                            <select class="form-img" name="regiao" class="form-control">
-                            <option  selected ><?=$usuario['regiao'];?></option>
-                                <option>Zona Norte</option>
-                                <option>Zona Sul</option>
-                                <option>Zona Leste</option>
-                                <option>Zona Oeste</option>
-                            </select>
-                        </div>
-                        <div class="textarea-block">
-                            <label for="exampleFormControlTextarea1">Descrição do imóvel</label>
-                            <textarea class="form-control" name="descricao_imovel"id="exampleFormControlTextarea1"  rows="3">"<?=$usuario['descricao_imovel'];?>"</textarea>
-                        </div>
-                        <!-- <div class="input-block ">
-                            <label>FOTOS DA CASA</label><br>
-                            <label for="img1">Imagem 01</label>
-                            <input type="file" name="img1" class="form-img">
-                            <label for="img2">Imagem 02</label>
-                            <input type="file" name="img2" class="form-img">
-                        </div> -->
-                        <button type="submit" class="btn btn-success" name="Editar">Editar</button>
-                      <?php endwhile; ?>  
-                <?php endif; ?> 
-                </fieldset>
+                                <div class="input-block">
+                                    <label id="ativo" for="ativo">Cadastro ativo?</label>
+                                    <select class="form-img" name="ativo" class="form-control">
+                                        <option value='1' selected>Ativo</option>
+                                        <option value='2'>Inativo</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-success" name="Editar">Editar</button>
+                            <?php endforeach; ?>  
+                        <?php endif; ?> 
+                    </fieldset>
             </form>
         </section>
            

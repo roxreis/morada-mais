@@ -16,6 +16,10 @@
     justify-content: center;
 }
 
+.main-login section form{
+    display: contents;
+}
+
 .form-login fieldset{
     width: 93%;
     padding: 32px;
@@ -51,7 +55,7 @@
     color: white;
     padding: 125px 0px;
     /* margin-right: 189px; */
-    background-color: #c8c4bb;
+    background-color: #6615dd;
     flex-direction: column;
     align-items: center;
 }
@@ -96,7 +100,7 @@
 
 .seta-login {
     color: white;
-    margin-left: -171px;
+    margin-left: -156px;
     margin-top: 18px;
     margin-bottom: 21px;
     font-size: 2.5rem;
@@ -210,14 +214,45 @@
         color:  #7042cc;
     }
 
+    .main-login{
+        background-position-x: 173px;
+        background-position-y: 52px;
+        height: 572px;
+    }
+
+    .form-redefine-senha {
+        height: 574px;
+    }
+
+    .seta-recupera-senha {
+        margin-left: -202px;
+    }
+
+    #inputPassword2{
+        width: 342px;
+    }
+
 }
 
 
 @media (min-width: 1400px){
 
     .main-login{
-        background-position-x: 354px;
-        background-position-y: -26px;
+        background-position-x: 436px;
+        background-position-y: 163px;
+        height: 809px;
+    }
+
+    .form-redefine-senha {
+        height: 858px;
+    }
+
+    .seta-recupera-senha {
+        margin-left: -202px;
+    }
+
+    #inputPassword2{
+        width: 342px;
     }
 
 }

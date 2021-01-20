@@ -46,7 +46,7 @@
 
     <form class="form-inline form-lembrete" action="back-end/redefineSenha.php" method="POST">
         <div class="form-group ">
-            <input type="text" name="lembrete" class="form-control" id="inputPassword2" placeholder="Coloque a sua frase de lembrete de senha">
+            <input type="text" name="lembrete" class="form-control " id="inputPassword2" placeholder="Coloque a sua frase de lembrete de senha">
         </div>
         <button type="submit" class="btn btn-primary mb-2">Enviar</button>
     </form>

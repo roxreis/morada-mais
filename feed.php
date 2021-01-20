@@ -125,5 +125,5 @@ if (!isset($_SESSION['UsuarioID'])) {
 		
 	</section>
 	<div class="footer">
-		<?php include_once('includes/footerFeed.php') ?> 
+		<?php include_once('includes/footer.php') ?> 
 	</div>

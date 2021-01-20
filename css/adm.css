@@ -15,7 +15,7 @@
 .page-adm #titulo-adm {
     /* width: 100vw; */
     width: 100wv;
-    background-color: #008F95;
+    background-color: #6615dd;
     color: #fff;
     height: 119px;
     display: flex;
@@ -110,6 +110,7 @@ section .div-table-adm {
     /* padding: 0px 8px; */
     /* width: 104vw; */
     display: none;
+    background-color: #6615dd;
 }
 
 .page-adm aside li{
@@ -251,7 +252,7 @@ aside .alert-danger {
         /* justify-content: center; */
         flex-direction: column;
         /* align-items: center; */
-        background-color: #E24E42;
+        /* background-color: #ff75d4; */
     }
 
     .page-adm section hr {
@@ -411,7 +412,7 @@ aside .alert-danger {
         /* justify-content: center; */
         flex-direction: column;
         align-items: center;
-        background-color: #E24E42;
+        background-color: #6615dd;
     }
 
     .page-adm section hr {

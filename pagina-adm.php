@@ -73,6 +73,7 @@
                             <th scope="col">Email</th>
                             <th scope="col">Status Cadastro</th>
                             <th scope="col">Cadastrado desde</th>
+                            <th scope="col">foto</th>
                             <th scope="col">Editar</th>
                             </tr>
                         </thead>
@@ -96,7 +97,8 @@
                                             <?php endif; ?>
                                         </td>
                                         <td><?= $usuario['cadastro']; ?></td>
-                                        <td><a class="badge badge-info"  href="back-end/editarUsuario.php?id=<?= $usuario['user_id']; ?>">Editar</a></td>
+                                        <td><img src="<?= $usuario['img']; ?>" style="width: 60px" alt=""></td>
+                                        <td><a class="badge badge-info"  href="back-end/editarUsuario.php?id=<?= $usuario['id_user']; ?>">Editar</a></td>
                                     </tr>
                                 <?php endforeach; ?>  
                             <?php else: ?>    

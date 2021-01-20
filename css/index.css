@@ -420,7 +420,7 @@ header .intro-text .intro-lead-in h1 {
     header .intro-text .intro-lead-in {
         width: auto;
         margin-top: 126px;
-        margin-bottom: -55px;
+        margin-bottom: 14px;
     }
     
     header .intro-text {
@@ -479,6 +479,23 @@ header .intro-text .intro-lead-in h1 {
     .img-logo {
         width: 102px;
         margin-left: 24px;
+    }
+
+    .img-empresa {
+        font-size: 11rem;
+    }
+    
+    #globe {
+        margin-top: -4px;
+    }
+    
+    #plane{
+        margin-top: 5px;
+    }
+    
+    #puzzle{
+        margin-top: 0px;
+        margin-left: 10px;
     }
 
     .timeline > li {

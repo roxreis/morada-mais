@@ -803,7 +803,7 @@ section {
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1399px) {
   .timeline > li {
     min-height: 170px;
   }
@@ -822,5 +822,14 @@ section {
     padding: 0 100px 20px 20px;
   }
 
+
+}
+
+
+@media (min-width: 1400px) {
+
+  footer {
+    
+  }
 
 }

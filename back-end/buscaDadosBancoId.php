@@ -2,13 +2,13 @@
 
 include_once 'db/conexao.php';
 
-$tabela = $_GET['table'];
 
+$id = $_GET['id'];
 
 
 setlocale(LC_MONETARY, 'pt_BR');
 
-$sql = "SELECT * FROM $tabela";
+$sql = "SELECT * FROM usuario WHERE id_user = '$id'";
 $result = $con->query($sql);
 
 print_r( json_encode( $result->fetch_all(MYSQLI_ASSOC)));
