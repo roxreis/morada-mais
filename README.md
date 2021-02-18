@@ -16,7 +16,7 @@ git clone https://github.com/roxreis/morada-mais
 
 Para execução basta um servidor local, testado no WAMP e XAMP.
 
-Criar banco de dados no MySQL com nome moradamais(existe um arquivo sql na pasta back-end/db).
+Criar banco de dados no MySQL com nome moradamais(existe um arquivo sql na pasta models/db).
 
 ### Funcionalidades
 
@@ -28,9 +28,8 @@ Criar banco de dados no MySQL com nome moradamais(existe um arquivo sql na pasta
 - [x] Login de administrador.
 - [x] Envio de mensagem pelo footer e listagem da mesma na pagina admin.
 - [x] Pagina do administrador com relatório de usuários e cadastro de novo admin.
-- [ ] Perfil do usuário.
-- [ ] Feed.
-- [ ] Chat.
+- [x] Feed.
+- [x] Chat.
 
 ### Link para o projeto.
 
