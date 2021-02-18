@@ -1,0 +1,13 @@
+.body-chat {
+    display: flex;
+    flex-direction: column;
+}
+
+#chat {
+    /* height: 800px; */
+    margin-top: 186px;
+}
+
+form {
+    height: 500px;
+}

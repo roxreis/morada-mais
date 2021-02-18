@@ -1,0 +1,12 @@
+{
+    "autoload": {
+        "psr-4": {
+            "MyApp\\": "backend/lib"
+        }
+    },
+
+    "require": {
+        "cboden/ratchet": "^0.4.3"
+        
+    }
+}

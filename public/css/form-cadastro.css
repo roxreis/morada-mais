@@ -1,0 +1,191 @@
+.seta {
+    color: white;
+    margin-left: 17px;
+    margin-top: 11px;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+
+section{
+    padding: 0;
+}
+
+footer{
+    background-color: #fff;
+}
+
+.body-form-cadastro  {
+    background-color: #6615dd;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-form-banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 318px;
+    background-position-x: -4px;
+    background-position-y: 0;
+}
+
+.div-form-banner img {
+    color: white;
+}
+
+
+#section-form-cadastro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* padding-bottom: 0px; */
+    background-color: #e3e3e3;
+    padding: 0;
+    /* height: auto; */
+}
+
+#cadastro-usuario {
+    width: 90%;
+    padding: 40px;
+    margin-top: 50px 0px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+    bottom: 253px;
+    /* left: 396px; */
+}
+
+#cadastro-usuario fieldset label{
+    color: var(--color-text-complement);
+    font-weight: 700;
+}
+
+#cadastro-usuario fieldset hr {
+    color: #363636;
+    width: 70%;
+}
+
+.label-anunciar {
+    margin: 20px 0;
+    padding: 20px 30px;
+    text-transform: uppercase;
+}
+
+#cadastro-usuario fieldset h2 {
+
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+#cadastro-usuario fieldset button {
+    width: 75px;
+    height: 34px;
+    font-size: 1.6rem;
+    margin-top: 20px;
+    background-color: #6615dd;
+    border-color:  #6615dd;
+}
+
+#cadastro-usuario fieldset button:hover {
+    background-color: #5d13cc;
+    border-color: #5d13cc;
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .div-form-banner {
+        background-color:#6615dd;
+        background-repeat: no-repeat;
+        background-size: cover;
+         
+        height: 435px;
+        background-position-x: 100px;
+        background-position-y: -235px;
+        }
+        #section-form-cadastro{
+            /* height: 1102px; */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            /* padding-bottom: 0px; */
+            background-color: #6615dd;
+            padding: 0;
+        }
+        
+        #cadastro-usuario {
+            height: 100%;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            padding: 39px;
+        }
+
+        #cadastro-usuario fieldset h2 {
+            color: #7c7c7d;
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+        }
+
+        .seta {
+            color: white;
+            margin-left: 82px;
+            margin-top: 105px;
+            /* margin-bottom: 30px; */
+            font-size: 3.80rem;
+            cursor: pointer;
+
+        }
+
+
+        .form-img {
+            margin-bottom: 20px;
+            color: var(--color-text-complement);
+            border-radius: 0.8rem;
+            background: var(--color-input-background);
+            border: 1px solid var(--color-line-in-white);
+
+        }
+
+        #regiao{
+            margin-top: 20px;
+
+        }
+
+        input-block .form-img:focus-within::after, 
+        #regiao:focus-within::after{
+            content: "";
+            width: 0;
+            height: 0;
+            background: transparent;
+            position: absolute;
+            left: 0rem;
+            bottom: 0px;
+        }
+
+}
+
+@media (min-width: 1024px){
+
+    .seta {
+        margin-left: 206px;
+    }
+
+}
+
+
+@media (min-width: 1200px){
+
+    .seta {
+        margin-left: 377px;
+        margin-top: 118px;
+    }
+
+    #cadastro-usuario {
+        width: 43%;
+        margin-top: 100px;
+    }
+
+}

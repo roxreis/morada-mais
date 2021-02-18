@@ -13,7 +13,6 @@
 
   }
 
-
 ?>
 
 <!DOCTYPE html>
@@ -40,9 +39,9 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
         <!-- Theme CSS -->
-        <link href="css/agency.min.css" rel="stylesheet">
-        <link href="css/agency.css" rel="stylesheet">
-        <link href="css/index.css" rel="stylesheet">
+        <link href="public/css/agency.min.css" rel="stylesheet">
+        <link href="public/css/agency.css" rel="stylesheet">
+        <link href="public/css/index.css" rel="stylesheet">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -63,7 +62,7 @@
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                             <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                         </button>
-                        <a class="page-scroll" href="#page-top"><img class="img-logo" src="img/logos/logo3.png"></a>
+                        <a class="page-scroll" href="#page-top"><img class="img-logo" src="./public/img/logos/logo3.png"></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -99,7 +98,7 @@
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                             <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                         </button>
-                        <a class="page-scroll" href="#page-top"><img class="img-logo" src="img/logos/logo3.png"></a>
+                        <a class="page-scroll" href="#page-top"><img class="img-logo" src="./public/img/logos/logo3.png"></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -127,8 +126,9 @@
                                         Olá, <?= $usuarios['UsuarioNome'];?>
                                     </button>
                                     <div class="dropdown-menu div-sair">
-                                        <a class="dropdown-item" href="back-end/logout.php">Sair</a>
-                                        <a class="page-scroll" href="feed.php">Feed</a>
+                                        <a class="dropdown-item" href="backend/logout.php">Sair</a>
+                                        <a class="page-scroll" href="views/feed.php">Feed</a>
+                                        <a class="page-scroll" href="models/chat/index.php?id=<?=$usuarios['UsuarioID']?>">Chat</a>
 
                                     </div>
                                 </div>
@@ -152,8 +152,8 @@
                 <div></div>
                 <?php else: ?>
                     <div class="btn-index">
-                        <a href="form-login.php" class="btn btn-xl" id="btn-login">Login</a>
-                        <a href="form-cadast-usuario.php" class="btn btn-xl">Cadastrar</a>
+                        <a href="views/form-login.php" class="btn btn-xl" id="btn-login">Login</a>
+                        <a href="views/form-cadast-usuario.php" class="btn btn-xl">Cadastrar</a>
                     </div>
                 <?php endif; ?>
                 </div>
@@ -375,7 +375,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form  action="back-end/cadastrarMsgHome.php" method="POST">
+                    <form  action="models/cadastrarMsgHome.php" method="POST">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -424,7 +424,7 @@
                         <li><a href="https://www.instagram.com/projetomoradamais/" target="_blank"><i class="fa fa-instagram"></i></a>
                         </li>
                     </li>
-                    <li><a href="pagina-adm.php"><i class="fa fa-cogs" aria-hidden="true"></i></a>
+                    <li><a href="views/pagina-adm.php"><i class="fa fa-cogs" aria-hidden="true"></i></a>
                     </li>
                     </ul>
                 </div>
