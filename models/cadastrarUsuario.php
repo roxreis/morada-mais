@@ -9,6 +9,31 @@ if (isset($_POST['cadastrar'])) {
     $sobrenome = $_POST['last_name'];
     $email = $_POST['email'];
     $cpf = $_POST['cpf'];
+    
+    function validaCPF($cpf) {
+        $cpf = preg_replace( '/[^0-9]/is', '', $cpf );
+        if (strlen($cpf) != 11) {
+            echo "<script> alert('CPf Inválido!')</script>";
+            echo "<script> window.location.href='/morada-mais/views/form-cadast-usuario.php'</script>";
+        }
+        if (preg_match('/(\d)\1{10}/', $cpf)) {
+            echo "<script> alert('CPf Inválido!')</script>";
+            echo "<script> window.location.href='/morada-mais/views/form-cadast-usuario.php'</script>";
+        }
+        for ($t = 9; $t < 11; $t++) {
+            for ($d = 0, $c = 0; $c < $t; $c++) {
+                $d += $cpf[$c] * (($t + 1) - $c);
+            }
+            $d = ((10 * $d) % 11) % 10;
+            if ($cpf[$c] != $d) {
+                return false;
+            }
+        }
+        return  $cpf;
+    
+    }
+
+    $cpfValidado = validaCPF($cpf);
     $nivelAcesso = $_POST['nivel'];
     $bio = $_POST['bio']; 
     $fraseSenha = $_POST['frase-senha'];
@@ -28,7 +53,7 @@ if (isset($_POST['cadastrar'])) {
 
 
     // $inserir = "INSERT INTO usuario (first_name, last_name, user_email, user_cpf, user_pass, lembrete_senha, user_nivel, user_ativo, bio, img) VALUES ('$nome', '$sobrenome', '$email', '$cpf', '$senhaSegura', '$fraseSenha','$nivelAcesso', 1, '$bio','$destino_db')";
-    $statement = $connect->prepare("INSERT INTO usuario (first_name, last_name, user_email, user_cpf, user_pass, lembrete_senha, user_nivel, user_ativo, bio, img, celular) VALUES ('$nome', '$sobrenome', '$email', '$cpf', '$senhaSegura', '$fraseSenha','$nivelAcesso', 1, '$bio','$destino_db', '$celular')");
+    $statement = $connect->prepare("INSERT INTO usuario (first_name, last_name, user_email, user_cpf, user_pass, lembrete_senha, user_nivel, user_ativo, bio, img, celular) VALUES ('$nome', '$sobrenome', '$email', '$cpfValidado', '$senhaSegura', '$fraseSenha','$nivelAcesso', 1, '$bio','$destino_db', '$celular')");
     $statement->execute();
 
     if ($statement->execute()) {

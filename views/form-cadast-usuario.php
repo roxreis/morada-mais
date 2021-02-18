@@ -24,10 +24,10 @@
 </head>
 <body class="bg-light-gray body-form-cadastro ">
         <div class="div-form-banner" >
-           <a href="index.php"> <i class="fa fa-arrow-left seta" data-toggle="tooltip" data-placement="top" tabindex="0" title="Ir para Home" ></i></a>
+           <a href="../index.php"> <i class="fa fa-arrow-left seta" data-toggle="tooltip" data-placement="top" tabindex="0" title="Ir para Home" ></i></a>
         </div>    
         <section id="section-form-cadastro" class="d-flex justify-content-center">
-            <form action="../models/cadastrarUsuario.php"class="bg-light-gray" id="cadastro-usuario" method="POST" enctype="multipart/form-data" >
+            <form action="../models/cadastrarUsuario.php"class="bg-light-gray" id="cadastro-usuario" method="POST" name="frmcpf" enctype="multipart/form-data"  >
                 <fieldset>
                     <h2>Dados de Cadastro</h2>
                     <div class="input-block">
@@ -48,7 +48,7 @@
                     </
                     <div class="input-block">
                         <label for="cpf">CPF<small>(somente números)</small></label>
-                        <input name="cpf" id="cpf" type="number"  required>
+                        <input name="cpf" maxlength="11" onblur="return verificarCPF(this.value)" id="cpf" type="number"  required>
                     </div>
                     <div class="textarea-block">
                         <label for="exampleFormControlTextarea1">Conte sobre você!</label>
@@ -68,9 +68,11 @@
                     </div>
                     <input type="number" name="nivel" value="1" hidden>
                     <input type="number" name="ativo" value="1" hidden>
-                    <button type="submit" class="btn btn-success" name="cadastrar">Enviar</button>
+                    <button value="Checar" onclick="VerificaCPF()" type="submit" class="btn btn-success" name="cadastrar">Enviar</button>
                 </fieldset>
             </form>
         </section>
-           
+
+                 
         <?php  include_once('includes/footer.php')?>
+

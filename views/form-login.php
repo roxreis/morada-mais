@@ -27,7 +27,7 @@
 
 <main class="main-login" id="container">
   <div id="div-form-banner">
-    <a href="index.php"> <i class="fa fa-arrow-left seta-login" data-toggle="tooltip" data-placement="top" tabindex="0" title="Ir para Home" ></i></a> 
+    <a href="../index.php"> <i class="fa fa-arrow-left seta-login" data-toggle="tooltip" data-placement="top" tabindex="0" title="Ir para Home" ></i></a> 
   </div>
   <!-- Formulário de Login -->
   <section>

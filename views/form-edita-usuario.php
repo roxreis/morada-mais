@@ -31,7 +31,7 @@ if(isset($_GET['id'])) $idUsuario= $_GET['id'];
 </head>
 <body class="bg-light-gray body-form-cadastro ">
         <div class="div-form-banner" >
-           <a href="pagina-adm.php"> <i class="fa fa-arrow-left seta" data-toggle="tooltip" data-placement="top" tabindex="0" title="Ir para Home" ></i></a>
+           <a href="../pagina-adm.php"> <i class="fa fa-arrow-left seta" data-toggle="tooltip" data-placement="top" tabindex="0" title="Ir para Home" ></i></a>
         </div>    
         <section id="section-form-cadastro" class="d-flex justify-content-center">
             <form action="../models/editarUsuario.php" class="bg-light-gray" id="cadastro-usuario" method="POST" enctype="multipart/form-data" >
