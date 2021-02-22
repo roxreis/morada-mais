@@ -61,6 +61,7 @@ section#contact .text-danger {
 footer {
   padding: 25px 0;
   text-align: center;
+  margin-top: 250px;
 }
 footer span.copyright {
   line-height: 40px;

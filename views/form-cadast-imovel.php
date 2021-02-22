@@ -50,7 +50,7 @@
                 <fieldset  >
                     <h2>Dados do imóvel</h2>
                     <div class="input-block">
-                        <label for="titulo">Descrição do imóvel</label>
+                        <label for="titulo">Titulo do anúncio</label>
                         <input name="titulo" placeholder="Casa proximo metrô" required>
                     </div>
                     <div class="input-block">

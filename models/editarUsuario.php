@@ -34,9 +34,9 @@ if (isset($editar)) {
 
     // $update = "UPDATE usuario SET user_email='$email', user_ativo='$ativo' WHERE id_user=$idUsuario";
     $statement = $connect->prepare("UPDATE usuario SET user_email='$email', user_ativo='$ativo' WHERE id_user=$idUsuario");
-    $statement->execute();
+    $ok = $statement->execute();
 
-    if ($statement->execute()) {
+    if (!empty($ok)) {
 
         echo "<script> alert('Editado com sucesso!')</script>";
         echo "<script> window.location.href='/morada-mais/views/pagina-adm.php'</script>";

@@ -14,8 +14,7 @@ session_start();
 $query = "
 SELECT * FROM usuario 
 JOIN locador 
-ON locador.id_user = usuario.id_user;
-
+ON locador.id_user = usuario.id_user
 WHERE usuario.id_user != '".$_SESSION['UsuarioID']."'
 ";
 

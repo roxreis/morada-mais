@@ -126,7 +126,7 @@
                                         Olá, <?= $usuarios['UsuarioNome'];?>
                                     </button>
                                     <div class="dropdown-menu div-sair">
-                                        <a class="dropdown-item" href="backend/logout.php">Sair</a>
+                                        <a class="dropdown-item" href="models/logout.php">Sair</a>
                                         <a class="page-scroll" href="views/feed.php">Feed</a>
                                         <a class="page-scroll" href="models/chat/index.php?id=<?=$usuarios['UsuarioID']?>">Chat</a>
 
@@ -274,7 +274,7 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/team/aline.jpg" class="img-responsive img-circle" alt="">
+                            <img src="public/img/team/aline.jpg" class="img-responsive img-circle" alt="">
                             <h4>Aline Santiago</h4>
                             <p class="text-muted">Dev Team</p>
                             <ul class="list-inline social-buttons">
@@ -288,7 +288,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/team/felipe.jpg" class="img-responsive img-circle" alt="">
+                            <img src="public/img/team/felipe.jpg" class="img-responsive img-circle" alt="">
                             <h4>Felipe Freire</h4>
                             <p class="text-muted">Dev Team</p>
                             <ul class="list-inline social-buttons">
@@ -302,7 +302,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/team/rodrigo.jpg" class="img-responsive img-circle" alt="">
+                            <img src="public/img/team/rodrigo.jpg" class="img-responsive img-circle" alt="">
                             <h4>Rodrigo Reis</h4>
                             <p class="text-muted">Dev Team</p>
                             <ul class="list-inline social-buttons">
@@ -316,7 +316,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/team/thiago.jpg" class="img-responsive img-circle" alt="">
+                            <img src="public/img/team/thiago.jpg" class="img-responsive img-circle" alt="">
                             <h4>Thiago Guerreiro</h4>
                             <p class="text-muted">Dev Team</p>
                             <ul class="list-inline social-buttons">
@@ -330,7 +330,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/team/daniel.jpg" class="img-responsive img-circle" alt="">
+                            <img src="public/img/team/daniel.jpg" class="img-responsive img-circle" alt="">
                             <h4>Daniel Leal</h4>
                             <p class="text-muted">Dev Team</p>
                             <ul class="list-inline social-buttons">
@@ -344,7 +344,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/team/raquel.jpg" class="img-responsive img-circle" alt="">
+                            <img src="public/img/team/raquel.jpg" class="img-responsive img-circle" alt="">
                             <h4>Raquel Ramos</h4>
                             <p class="text-muted">Dev Team</p>
                             <ul class="list-inline social-buttons">
@@ -451,11 +451,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <script src="./public/js/jqBootstrapValidation.js"></script>
+    <script src="./public/js/contact_me.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="js/agency.min.js"></script>
+    <script src="./public/js/agency.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3h56lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

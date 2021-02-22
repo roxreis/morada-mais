@@ -68,7 +68,7 @@
                     </div>
                     <input type="number" name="nivel" value="1" hidden>
                     <input type="number" name="ativo" value="1" hidden>
-                    <button value="Checar" onclick="VerificaCPF()" type="submit" class="btn btn-success" name="cadastrar">Enviar</button>
+                    <button type="submit" class="btn btn-success" name="cadastrar">Enviar</button>
                 </fieldset>
             </form>
         </section>
