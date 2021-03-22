@@ -1,5 +1,7 @@
 # Morada Mais
 
+<p align="center">  <img src="./logo.png"></p
+
 Uma plataforma de aluguel compartilhado e de baixo custo, focada no público LGBTQIA+, criada para fornecer moradia digna e bem estar.
 
 ### Tecnologias usadas no do projeto
