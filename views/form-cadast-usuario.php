@@ -45,7 +45,7 @@
                     <div class="input-block">
                         <label for="celular">celular <small>(com DDD - 11999999999)</small> </label>
                         <input name="celular" id="celular" type="phone" required>
-                    </
+                    </div>
                     <div class="input-block">
                         <label for="cpf">CPF<small>(somente números)</small></label>
                         <input name="cpf" maxlength="11" onblur="return verificarCPF(this.value)" id="cpf" type="number"  required>
@@ -66,6 +66,14 @@
                         <label for="img">Sua Foto</label>
                         <input type="file" name="img" class="form-img">
                     </div>
+                    
+                    <div class="controls">
+                        <label class="checkbox">
+                            <input type="checkbox" id="termos" name="termos"
+                            required="" data-validation-required-message="Para prosseguir, favor concorde com os termos de uso">Eu li e aceito os <a href="../views/termo-uso.html">termos de uso</a>
+                        </label>
+                    </div>
+                    
                     <input type="number" name="nivel" value="1" hidden>
                     <input type="number" name="ativo" value="1" hidden>
                     <button type="submit" class="btn btn-success" name="cadastrar">Enviar</button>
